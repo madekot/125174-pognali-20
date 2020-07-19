@@ -147,25 +147,26 @@
         <li class="friends-travelers-list__item">
           <article class="friend-traveler">
             <div class="friend-traveler__first">
-              <p class="friend-traveler__traveler-level traveler-level">
-                <span class="traveler-level__level-number">87</span>
-                <span class="traveler-level__text">level</span>
+              <p class="friend-traveler__traveler-level">
+                <span class="friend-traveler__traveler-level-number">87</span>
+                <span class="friend-traveler__traveler-level-text">level</span>
               </p>
               <img class="friend-traveler__image" src="" alt="">
             </div>
             <div class="friend-traveler__second">
-              <h2 class="friend-traveler__name friend-traveler__name--active">Lorem ipsum.</h2>
+              <div class="friend-traveler__is-online is-online" aria-label="В офлайне"></div>
+              <h2 class="friend-traveler__name">Lorem ipsum.</h2>
               <ul class="friend-traveler__desired-countries desired-countries-list">
                 <li class="desired-countries-list__item">
-                  <a class="desired-countries-list__link desired-countries-list__icon-first" href="#"
+                  <a class="desired-countries-list__link desired-country-flag desired-country-flag--first" href="#"
                      aria-label="Хочу в Шриланку"></a>
                 </li>
                 <li class="desired-countries-list__item">
-                  <a class="desired-countries-list__link desired-countries-list__icon-first" href="#"
+                  <a class="desired-countries-list__link desired-country-flag desired-country-flag--first" href="#"
                      aria-label="Хочу в Шриланку"></a>
                 </li>
                 <li class="desired-countries-list__item">
-                  <a class="desired-countries-list__link desired-countries-list__icon-first" href="#"
+                  <a class="desired-countries-list__link desired-country-flag desired-country-flag--first" href="#"
                      aria-label="Хочу в Шриланку"></a>
                 </li>
               </ul>
@@ -206,14 +207,15 @@
         <li class="friends-travelers-list__item">
           <article class="friend-traveler">
             <div class="friend-traveler__first">
-              <p class="friend-traveler__traveler-level traveler-level">
-                <span class="traveler-level__level-number">87</span>
-                <span class="traveler-level__text">level</span>
+              <p class="friend-traveler__traveler-level">
+                <span class="friend-traveler__traveler-level-number">87</span>
+                <span class="friend-traveler__traveler-level-text">level</span>
               </p>
               <img class="friend-traveler__image" src="" alt="">
             </div>
             <div class="friend-traveler__second">
-              <h2 class="friend-traveler__name friend-traveler__name--active">Lorem ipsum.</h2>
+              <div class="friend-traveler__is-online is-online is-online--active" aria-label="Сейчас на сайте"></div>
+              <h2 class="friend-traveler__name">Lorem ipsum.</h2>
               <ul class="friend-traveler__desired-countries desired-countries-list">
                 <li class="desired-countries-list__item">
                   <a class="desired-countries-list__link desired-countries-list__icon-first" href="#"
@@ -235,8 +237,7 @@
               <ul class="friend-traveler__transport-travel transport-travel-list">
                 <li class="transport-travel-list__item">
                   <a class="transport-travel-list__item-link
-                  transport-travel-list__item-link--icon-first
-                  transport-travel-list__item-link--active"
+                  transport-travel-list__item-link--icon-first-active"
                      href="#" aria-label="Желаемый способы траспорта, самолет: да"></a>
                 </li>
                 <li class="transport-travel-list__item">
@@ -284,8 +285,8 @@
     </section>
   </section>
 </main>
-<div class="page__wrapper-footer">
-  <footer class="page__footer footer">
+<div class="page__wrapper-footer wrapper-footer">
+  <footer class="wrapper-footer__footer footer">
     <div class="footer__logo lets-go-logo"></div>
     <ul class="footer__social social">
       <li class="social__item">
