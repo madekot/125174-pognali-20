@@ -7,11 +7,11 @@
 <body class="page">
 <header class="page__header header">
   <nav class="header__nav">
-    <div class="header__first">
+    <div class="header__first-wrap">
       <div class="header__logo lets-go-logo"></div>
       <div class="header__close-button"></div>
     </div>
-    <div class="header__second">
+    <div class="header__second-wrap">
       <ul class="header__site-nav site-nav">
         <li class="site-nav__item">
           <a class="site-nav__link" href="#">Lorem ipsum.</a>
@@ -59,8 +59,8 @@
 <main class="page__main main">
   <h1 class="visually-hidden">lorem</h1>
   <p class="main__lead">Lorem ipsum dolor.</p>
-  <div class="main__first-row main-first-row">
-    <ul class="main-first-row__contacts-icons-list contacts-icons-list">
+  <div class="main__first-wrap main-first-wrap">
+    <ul class="main-first-wrap__contacts-icons-list contacts-icons-list">
       <li class="contacts-icons-list__item">
         <a class="contact-icon contact-icon--phone-second-image"></a>
       </li>
@@ -68,7 +68,7 @@
 				<a class="contact-icon contact-icon--email-second-image"></a>
       </li>
     </ul>
-    <a class="main-first-row__login-in-button button" href="#">Автомаризация</a>
+    <a class="main-first-wrap__login-in-button button" href="#">Автомаризация</a>
   </div>
   <blockquote class="main__quote quote">
     <p class="quote__text">Ум ценится дорого, когда дешевеет сила.</p>
@@ -95,7 +95,7 @@
         <li class="country-list__item">
           <article class="card-country">
             <img class="card-country__image" src="" alt="">
-            <div class="card-country__first">
+            <div class="card-country__first-wrap">
               <div class="card-country__description card-country-description">
                 <h2 class="card-country__title">lorem</h2>
                 <p class="card-country__intro">Lorem ipsum.</p>
@@ -107,7 +107,7 @@
         <li class="country-list__item">
           <article class="card-country">
             <img class="card-country__image" src="" alt="">
-            <div class="card-country__first">
+            <div class="card-country__first-wrap">
               <div class="card-country__description card-country-description">
                 <h2 class="card-country__title">lorem</h2>
                 <p class="card-country__intro">Lorem ipsum.</p>
@@ -119,7 +119,7 @@
         <li class="country-list__item">
           <article class="card-country">
             <img class="card-country__image" src="" alt="">
-            <div class="card-country__first">
+            <div class="card-country__first-wrap">
               <div class="card-country__description card-country-description">
                 <h2 class="card-country__title">lorem</h2>
                 <p class="card-country__intro">Lorem ipsum.</p>
@@ -133,22 +133,22 @@
     </section>
   </div>
   <div class="main__wrapper-travelers">
-    <section class="friends-travelers">
+    <section class="main__friends-travelers friends-travelers">
       <h2 class="friends-travelers__title">lorem</h2>
       <p class="friends-travelers__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, placeat.</p>
       <p class="friends-travelers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, perferendis.</p>
       <ul class="friends-travelers__list friends-travelers-list">
         <li class="friends-travelers-list__item">
           <article class="friend-traveler">
-            <div class="friend-traveler__first">
+            <div class="friend-traveler__first-wrap">
               <p class="friend-traveler__traveler-level">
                 <span class="friend-traveler__traveler-level-number">87</span>
                 <span class="friend-traveler__traveler-level-text">level</span>
               </p>
               <img class="friend-traveler__image" src="" alt="">
             </div>
-            <div class="friend-traveler__second">
-              <div class="friend-traveler__is-online is-online" aria-label="В офлайне"></div>
+            <div class="friend-traveler__second-wrap">
+              <a class="friend-traveler__is-online is-online" aria-label="В офлайне"></a>
               <h2 class="friend-traveler__name">Lorem ipsum.</h2>
               <ul class="friend-traveler__desired-countries desired-countries-list">
                 <li class="desired-countries-list__item">
@@ -200,15 +200,15 @@
         </li>
         <li class="friends-travelers-list__item">
           <article class="friend-traveler">
-            <div class="friend-traveler__first">
+            <div class="friend-traveler__first-wrap">
               <p class="friend-traveler__traveler-level">
                 <span class="friend-traveler__traveler-level-number">87</span>
                 <span class="friend-traveler__traveler-level-text">level</span>
               </p>
               <img class="friend-traveler__image" src="" alt="">
             </div>
-            <div class="friend-traveler__second">
-              <div class="friend-traveler__is-online is-online is-online--active" aria-label="Сейчас на сайте"></div>
+            <div class="friend-traveler__second-wrap">
+              <a class="friend-traveler__is-online is-online is-online--active" aria-label="Сейчас на сайте"></a>
               <h2 class="friend-traveler__name">Lorem ipsum.</h2>
               <ul class="friend-traveler__desired-countries desired-countries-list">
                 <li class="desired-countries-list__item">
@@ -257,59 +257,73 @@
       <a class="friends-travelers__button-show-more button button--iconbahdsdы" href="#">Lorem
         ipsum.</a>
     </section>
-  </div>
-  <section class="main__paid-functions paid-functions">
-    <h2 class="visually-hidden">Платные функции сайта</h2>
-    <a class="paid-functions__lead">Lorem ipsum dolor.</a>
-    <ul class="paid-functions__list">
-      <li class="paid-functions__item">Lorem ipsum dolor sit.</li>
-      <li class="paid-functions__item">Lorem ipsum dolor sit.</li>
-      <li class="paid-functions__item">Lorem ipsum dolor sit.</li>
-    </ul>
-    <a class="paid-functions__show-more" href="#">Lorem ipsum dolor sit.</a>
-    <section class="paid-functions__business-rates business-rates">
-      <h2 class="business-rates__title">Lorem ipsum.</h2>
-      <ul class="business-rates__list business-rates-list">
-        <li class="business-rates-list__item">Lorem ipsum dolor sit.</li>
-        <li class="business-rates-list__item">Lorem ipsum dolor sit.</li>
-        <li class="business-rates-list__item">Lorem ipsum dolor sit.</li>
-        <li class="business-rates-list__item">Lorem ipsum dolor sit.</li>
+    <section class="main__paid-functions paid-functions">
+      <h2 class="visually-hidden">Платные функции сайта</h2>
+      <a class="paid-functions__lead">Lorem ipsum dolor.</a>
+      <ul class="paid-functions__list">
+        <li class="paid-functions__item">Lorem ipsum dolor sit.</li>
+        <li class="paid-functions__item">Lorem ipsum dolor sit.</li>
+        <li class="paid-functions__item">Lorem ipsum dolor sit.</li>
       </ul>
-      <button class="business-rates__close-button">Lorem ipsum.</button>
+      <a class="paid-functions__show-more" href="#">Lorem ipsum dolor sit.</a>
+      <section class="paid-functions__business-rates business-rates">
+        <h2 class="business-rates__title">Lorem ipsum.</h2>
+        <ul class="business-rates__list business-rates-list">
+          <li class="business-rates-list__item">Lorem ipsum dolor sit.</li>
+          <li class="business-rates-list__item">Lorem ipsum dolor sit.</li>
+          <li class="business-rates-list__item">Lorem ipsum dolor sit.</li>
+          <li class="business-rates-list__item">Lorem ipsum dolor sit.</li>
+        </ul>
+        <button class="business-rates__close-button">Lorem ipsum.</button>
+      </section>
     </section>
-  </section>
+  </div>
 	<section class="main__register register">
 		<h2 class="register__title">lorem</h2>
 		<p class="register__intro">Lorem ipsum dolor sit amet.
 			<a class="register__log-in-link" href="#">lorem</a>
 		</p>
 		<form class="register__form register-form">
-			<input class="register-form__imail-input" type="email" placeholder="lorem">
+      <label class="register-form__imail-label">
+        <input class="register-form__imail-input" type="email" placeholder="lorem">
+      </label>
 			<button class="register-form__submit-button button button--icon" type="submit" aria-label="отправить данные для регистрации"></button>
 		</form>
-		<p class="register__text">Lorem ipsum dolor sit.</p>
-		<ul class="register__contacts contacts-list">
-			<li class="contacts-list__item">
-				<a class="contact contact--color">
-					<div class="contact__icon contact-icon contact-icon--phone"></div>
-					<p class="contact__text">Lorem ipsum dolor.</p>
-				</a>
-			</li>
-			<li class="contacts-list__item">
-				<a class="contact contact--color">
-					<div class="contact__icon contact-icon contact-icon--email"></div>
-					<p class="contact__text">Lorem ipsum dolor.</p>
-				</a>
-			</li>
-		</ul>
-	</section>
-	<div class="main__second-row main-second-row">
-		<a class="main-second-row__contact contact contact--color">
-			<div class="contact__icon contact-icon contact-icon--address"></div>
-			<p class="contact__text">Lorem ipsum dolor.</p>
-		</a>
-		<a class="main-second-row__button button button--icon button--border" href="#">Lorem ipsum.</a>
-	</div>
+  </section>
+  <section class="main__feedback-contacts feedback-contacts">
+    <h2 class="visually-hidden">lorem</h2>
+    <p class="feedback-contacts__lead">Lorem ipsum dolor sit.</p>
+    <div class="register__contacts-list contacts-list-second-style">
+      <div class="contacts-list-second-style__first-wrapper">
+        <div class="contacts-list-second-style__first-inner-wrap">
+          <p class="contacts-list-bottom__item">
+            <a class="contact contact--color">
+              <span class="contact__icon contact-icon contact-icon--phone"></span>
+              <span class="contact__text">Lorem ipsum dolor.</span>
+            </a>
+          </p>
+          <p class="contacts-list-bottom__item">
+            <a class="contact contact--color">
+              <span class="contact__icon contact-icon contact-icon--email"></span>
+              <span class="contact__text">Lorem ipsum dolor.</span>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="contacts-list-second-style__second-wrapper">
+        <p class="contacts-list-bottom__item">
+          <a class="contact contact--color">
+            <span class="contact__icon contact-icon contact-icon--address"></span>
+            <span class="contact__text">Lorem ipsum dolor.</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <a class="main-second-row__button button button--icon button--border" href="#">Lorem ipsum.</a>
+    <div class="feedback-contacts__map">
+      <img class="feedback-contacts__map-image" src="" alt="">
+    </div>
+  </section>
 </main>
 <div class="page__wrapper-footer wrapper-footer">
   <footer class="wrapper-footer__footer footer">
