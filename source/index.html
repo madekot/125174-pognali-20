@@ -29,13 +29,13 @@
         </li>
       </ul>
       <ul class="header__contacts contacts-list">
-        <li class="contacts-list__phone">
+        <li class="contacts-list__item">
           <a class="contact">
             <div class="contact__icon contact-icon contact-icon--phone"></div>
             <p class="contact__text">Lorem ipsum dolor.</p>
           </a>
         </li>
-        <li class="contacts-list__email">
+        <li class="contacts-list__item">
           <a class="contact">
             <div class="contact__icon contact-icon contact-icon--email"></div>
             <p class="contact__text">Lorem ipsum dolor.</p>
@@ -59,22 +59,16 @@
 <main class="page__main main">
   <h1 class="visually-hidden">lorem</h1>
   <p class="main__lead">Lorem ipsum dolor.</p>
-  <div class="main__first-row">
-    <ul class="main__contacts contacts-list contacts-list--direction">
-      <li class="contacts-list__phone">
-        <a class="contact contact--size contact--special-orange">
-          <div class="contact__icon contact-icon contact-icon--phone contact-icon--second-phone"></div>
-          <p class="contact__text visually-hidden">Lorem ipsum dolor.</p>
-        </a>
+  <div class="main__first-row main-first-row">
+    <ul class="main-first-row__contacts-icons-list contacts-icons-list">
+      <li class="contacts-icons-list__item">
+        <a class="contact-icon contact-icon--phone-second-image"></a>
       </li>
-      <li class="contacts-list__email">
-        <a class="contact contact--size contact--special-yellow-dark">
-          <div class="contact__icon contact-icon contact-icon--email contact-icon--second-email"></div>
-          <p class="contact__text visually-hidden">Lorem ipsum dolor.</p>
-        </a>
+      <li class="contacts-icons-list__item">
+				<a class="contact-icon contact-icon--email-second-image"></a>
       </li>
     </ul>
-    <a class="main__login-in-button button" href="#">Автомаризация</a>
+    <a class="main-first-row__login-in-button button" href="#">Автомаризация</a>
   </div>
   <blockquote class="main__quote quote">
     <p class="quote__text">Ум ценится дорого, когда дешевеет сила.</p>
@@ -135,7 +129,7 @@
           </article>
         </li>
       </ul>
-      <a class="countrys__button-show-more button button--icon button--light-rounding" href="#">Lorem ipsum.</a>
+      <a class="countrys__button-show-more button button--icon" href="#">Lorem ipsum.</a>
     </section>
   </div>
   <div class="main__wrapper-travelers">
@@ -260,7 +254,7 @@
           </article>
         </li>
       </ul>
-      <a class="friends-travelers__button-show-more button button--icon button--light-rounding" href="#">Lorem
+      <a class="friends-travelers__button-show-more button button--iconbahdsdы" href="#">Lorem
         ipsum.</a>
     </section>
   </div>
@@ -284,6 +278,38 @@
       <button class="business-rates__close-button">Lorem ipsum.</button>
     </section>
   </section>
+	<section class="main__register register">
+		<h2 class="register__title">lorem</h2>
+		<p class="register__intro">Lorem ipsum dolor sit amet.
+			<a class="register__log-in-link" href="#">lorem</a>
+		</p>
+		<form class="register__form register-form">
+			<input class="register-form__imail-input" type="email" placeholder="lorem">
+			<button class="register-form__submit-button button button--icon" type="submit" aria-label="отправить данные для регистрации"></button>
+		</form>
+		<p class="register__text">Lorem ipsum dolor sit.</p>
+		<ul class="register__contacts contacts-list">
+			<li class="contacts-list__item">
+				<a class="contact contact--color">
+					<div class="contact__icon contact-icon contact-icon--phone"></div>
+					<p class="contact__text">Lorem ipsum dolor.</p>
+				</a>
+			</li>
+			<li class="contacts-list__item">
+				<a class="contact contact--color">
+					<div class="contact__icon contact-icon contact-icon--email"></div>
+					<p class="contact__text">Lorem ipsum dolor.</p>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<div class="main__second-row main-second-row">
+		<a class="main-second-row__contact contact contact--color">
+			<div class="contact__icon contact-icon contact-icon--address"></div>
+			<p class="contact__text">Lorem ipsum dolor.</p>
+		</a>
+		<a class="main-second-row__button button button--icon button--border" href="#">Lorem ipsum.</a>
+	</div>
 </main>
 <div class="page__wrapper-footer wrapper-footer">
   <footer class="wrapper-footer__footer footer">
