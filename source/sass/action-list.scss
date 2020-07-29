@@ -1,57 +1,81 @@
 .action-list {
   // border-radius
-  --border-radius-item: 50px;
+  --border-radius-item: 15px;
 
   //color
-  --first-color-item: transparent;
-  --second-color-item: var(--first-color-inner-wrap-item);
-  --third-color-item: var(--second-color-inner-wrap-item);
-  --fourth-color-item: var(--third-color-inner-wrap-item);
-
-  --first-color-inner-wrap-item: #FF8D30;
-  --second-color-inner-wrap-item: #FFA530;
-  --third-color-inner-wrap-item: #FFBD30;
-  --fourth-color-inner-wrap-item: #FFD74B;
+  --first-color-item: #FF8D30;
+  --second-color-item: #FFA530;
+  --third-color-item: #FFBD30;
+  --fourth-color-item: #FFD74B;
 
   @include reset-list;
+
+  counter-reset: action-list-counter;
+
+  border-radius: var(--border-radius-item);
+  overflow: hidden;
 }
 
 .action-list__item {
-  background-color: var(--first-color-item);
+  display: flex;
+  background-color: transparent;
 
-  &--second-color {
+  &--second {
+    background-color: var(--first-color-item);
+  }
+
+  &--third {
     background-color: var(--second-color-item);
   }
 
-  &--third-color {
+  &--fourth {
     background-color: var(--third-color-item);
-  }
-
-  &--fourth-color {
-    background-color: var(--fourth-color-item);
   }
 }
 
 .action-list__inner-wrap-item {
-  background-color: var(--first-color-inner-wrap-item);
-  border-radius: var(--border-radius-item) var(--border-radius-item) 0 0;
+  @media (max-width: $tablet-breakpoint) {
+    border-radius: var(--border-radius-item) var(--border-radius-item) 0 0;
 
-  &--second-color {
-    background-color: var(--second-color-inner-wrap-item);
+    &::after {
+      padding: 22px 21px 22px 24px;
+    }
   }
 
-  &--third-color {
-    background-color: var(--third-color-inner-wrap-item);
+  display: flex;
+  flex-grow: 1;
+  background-color: var(--first-color-item);
+
+  &--second {
+    background-color: var(--second-color-item);
   }
 
-  &--fourth-color {
-    background-color: var(--fourth-color-inner-wrap-item);
+  &--third {
+    background-color: var(--third-color-item);
+  }
+
+  &--fourth {
+    background-color: var(--fourth-color-item);
+  }
+
+  &::after {
+    counter-increment: action-list-counter;
+    content: counter(action-list-counter);
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
   }
 }
 
 .action-list__link {
+  @media (max-width: $tablet-breakpoint) {
+    margin-right: auto;
+    padding: 22px 24px;
+  }
+
   display: inline-block;
-  padding: 22px 21px 22px 24px;
 
   font-size: 18px;
   line-height: 18px;
@@ -59,9 +83,92 @@
   color: var(--basic-blue-color);
 }
 
+// ============ tablet-breakpoint ============
+
 @media (min-width: $tablet-breakpoint) {
+  @media (max-width: $desktop-breakpoint) {
+    .action-list__item {
+      width: 50%;
+    }
+
+    .action-list__link {
+      padding: 31px 33px 10px;
+
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    .action-list__inner-wrap-item {
+      flex-direction: column;
+      padding-right: 100px;
+
+      &::after {
+        padding-left: 33px;
+        margin-bottom: 22px;
+
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+
   .action-list {
     // border-radius
-    --border-radius-item: 0px;
+    --border-radius-item: 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    border-radius: var(--border-radius-item);
+    overflow: hidden;
+  }
+
+  .action-list__inner-wrap-item {
+    &--second {
+      border-top-left-radius: var(--border-radius-item);
+    }
+
+    &--fourth {
+      border-bottom-left-radius: var(--border-radius-item);
+    }
+  }
+
+  .action-list__link {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+// ============ desktop-breakpoint ============
+
+@media (min-width: $desktop-breakpoint) {
+  .action-list__item {
+    width: 25%;
+  }
+
+  .action-list {
+    // border-radius
+    --border-radius-item: 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .action-list__inner-wrap-item {
+    border-top-left-radius: var(--border-radius-item);
+    border-bottom-left-radius: var(--border-radius-item);
+
+    &--second {
+      border-top-left-radius: var(--border-radius-item);
+    }
+
+    &--fourth {
+      border-bottom-left-radius: var(--border-radius-item);
+    }
+
+    &::after {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 }
