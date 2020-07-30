@@ -33,23 +33,20 @@
   }
 }
 
-.action-list__link {
+.action-list__paragraph {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .action-list__inner-wrap-item {
-  @media (max-width: $tablet-breakpoint) {
-    border-radius: var(--border-radius-item) var(--border-radius-item) 0 0;
-
-    &::after {
-      padding: 22px 21px 22px 24px;
-    }
-  }
-
   display: flex;
   flex-grow: 1;
   background-color: var(--first-color-item);
+  border-radius: var(--border-radius-item) var(--border-radius-item) 0 0;
+
+  &::after {
+    padding: 22px 21px 22px 24px;
+  }
 
   &--second {
     background-color: var(--second-color-item);
@@ -74,11 +71,9 @@
   }
 }
 
-.action-list__link {
-  @media (max-width: $tablet-breakpoint) {
-    margin-right: auto;
-    padding: 22px 24px;
-  }
+.action-list__paragraph {
+  margin-right: auto;
+  padding: 22px 24px;
 
   display: inline-block;
 
@@ -91,29 +86,32 @@
 // ============ tablet-breakpoint ============
 
 @media (min-width: $tablet-breakpoint) {
-  @media (max-width: $desktop-breakpoint) {
-    .action-list__item {
-      width: 50%;
-    }
+  .action-list__item {
+    width: 50%;
+  }
 
-    .action-list__link {
-      padding: 31px 33px 10px;
+  .action-list__paragraph {
+    margin-right: 0;
 
-      font-size: 24px;
-      line-height: 24px;
-    }
+    padding: 31px 33px 10px;
+    font-size: 24px;
+    line-height: 24px;
+  }
 
-    .action-list__inner-wrap-item {
-      flex-direction: column;
-      padding-right: 95px;
+  .action-list__inner-wrap-item {
+    border-radius: 0 0 0 0;
 
-      &::after {
-        padding-left: 33px;
-        margin-bottom: 22px;
+    flex-direction: column;
+    padding-right: 70px;
 
-        font-size: 30px;
-        line-height: 30px;
-      }
+    &::after {
+      padding: 0;
+
+      padding-left: 33px;
+      margin-bottom: 22px;
+
+      font-size: 30px;
+      line-height: 30px;
     }
   }
 
@@ -138,7 +136,7 @@
     }
   }
 
-  .action-list__link {
+  .action-list__paragraph {
     font-size: 24px;
     line-height: 24px;
   }
@@ -172,11 +170,17 @@
   }
 
   .action-list__inner-wrap-item {
+    flex-direction: row;
+
+    padding-right: 0;
+
+    border-radius: 0;
     border-top-left-radius: var(--border-radius-item);
     border-bottom-left-radius: var(--border-radius-item);
 
     &::after {
       padding: 29.7px 34px;
+      margin-bottom: 0;
 
       font-size: 24px;
       line-height: 24px;
@@ -206,7 +210,8 @@
     }
   }
 
-  .action-list__link {
+  .action-list__paragraph {
+    margin-right: auto;
     padding: 29.7px 34px;
 
     &--second {
