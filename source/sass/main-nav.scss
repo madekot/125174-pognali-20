@@ -1,18 +1,18 @@
-ul, // для сетки
-p {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+//ul, // для сетки
+//p {
+//  margin: 0;
+//  padding: 0;
+//  list-style: none;
+//}
 
-.main-nav__logo, // для сетки
-.main-nav__close-button,
-.main-nav__site-nav,
-.main-nav__user-nav,
-.main-nav__contacts,
-.main-nav__social {
-  background-color: tomato;
-}
+//.main-nav__logo, // для сетки
+//.main-nav__close-button,
+//.main-nav__site-nav,
+//.main-nav__user-nav,
+//.main-nav__contacts,
+//.main-nav__social {
+//  background-color: tomato;
+//}
 
 .main-nav__social { // для сетки
   height: 50px;
@@ -32,10 +32,15 @@ p {
 .main-nav__logo {
   grid-area: logo;
 
-  width: 96px;
+  width: 100px;
   height: 15px;
+
   margin-top: 27px;
   margin-bottom: 76px;
+}
+
+.main-nav__logo--size {
+  width: 96px; // rewrite
 }
 
 .main-nav__close-button {
@@ -47,6 +52,12 @@ p {
   margin-top: 25px;
   margin-bottom: 74px;
 }
+
+.main-nav__close-button--burger-icon {
+  width: 25px;
+  height: 11px;
+}
+
 
 .main-nav__site-nav {
   grid-area: site-nav;
@@ -90,9 +101,14 @@ p {
   }
 
   .main-nav__logo {
-    width: 164px;
-    height: 42px;
+    width: 164px; // rewrite
+    height: 42px; // rewrite
+
     margin-top: 45px; // rewrite
+  }
+
+  .main-nav__logo--size {
+    width: 166px; // rewrite
   }
 
   .main-nav__close-button {
@@ -144,10 +160,16 @@ p {
   }
 
   .main-nav__logo {
-    width: 200px;
-    height: 52px;
+    width: 198px; // rewrite
+    height: 60px; // rewrite
+
     margin-top: 47px; // rewrite
     margin-bottom: 0; // rewrite
+  }
+
+  .main-nav__logo--size {
+    width: 200px; // rewrite
+    height: 52px; // rewrite
   }
 
   .main-nav__close-button {

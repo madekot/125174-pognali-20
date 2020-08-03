@@ -1,0 +1,52 @@
+.lets-go-logo {
+  background-color: tomato; // временно для отображения блока
+
+  display: flex;
+  height: 100%;
+}
+
+.lets-go-logo--color .lets-go-logo__picture {
+  display: none;
+}
+
+.lets-go-logo--color .lets-go-logo__wrapper-image {
+  background-image: url(../img/logo-mobile-white@1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.lets-go-logo__link {
+  display: flex;
+  flex-grow: 1;
+}
+
+.lets-go-logo__wrapper-image {
+  display: flex;
+  flex-grow: 1;
+}
+
+.lets-go-logo__picture {
+  display: flex;
+  flex-grow: 1;
+}
+
+.lets-go-logo__image {
+  display: flex;
+  flex-grow: 1;
+}
+
+// ============ tablet-breakpoint ============
+
+@media (min-width: $tablet-breakpoint) {
+  .lets-go-logo--color .lets-go-logo__wrapper-image {
+    background-image: url(../img/logo-tablet-white@1x.png); // rewrite
+  }
+}
+
+// ============ desktop-breakpoint ============
+
+@media (min-width: $desktop-breakpoint) {
+  .lets-go-logo--color .lets-go-logo__wrapper-image {
+    background-image: url(../img/logo-desktop-white@1x.png); // rewrite
+  }
+}

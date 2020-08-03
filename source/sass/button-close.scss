@@ -1,0 +1,29 @@
+.button-close {
+  @include reset-button-styles;
+
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  font: inherit;
+  fill: #cccccc;
+  cursor: pointer;
+}
+
+.button-close--burger-icon .button-close__icon-close {
+  display: none;
+}
+
+.button-close--burger-icon .button-close__icon-open {
+  display: block;
+}
+
+.button-close__icon-close {
+  flex-grow: 1;
+}
+
+.button-close__icon-open {
+  flex-grow: 1;
+  display: none;
+}
