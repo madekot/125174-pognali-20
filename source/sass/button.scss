@@ -1,0 +1,40 @@
+.button {
+  display: flex;
+}
+
+.button__item {
+  @include reset-button-styles;
+  flex-grow: 1;
+
+  padding: 8px;
+  padding-top: 12px;
+  border-radius: 25px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $basic-blue-color;
+  background-color: $basic-yellow-color;
+}
+
+.button__item:hover {
+  background-color: $special-yellow-dark;
+}
+
+.button__item:active {
+  color: rgba($basic-blue-color, 0.3);
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .button__item {
+    padding: 14px;
+    padding-top: 16px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
