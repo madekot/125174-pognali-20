@@ -1,0 +1,30 @@
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121936;
+}
+
+.icon__contacts-phone {
+  width: 16px;
+  height: 15px;
+  fill: $basic-yellow-color;
+}
+
+.icon__contacts-mail {
+  width: 18px;
+  height: 12px;
+  fill: $basic-yellow-color;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .icon__contacts-phone {
+    width: 24px;
+    height: 22px;
+  }
+
+  .icon__contacts-mail {
+    width: 28px;
+    height: 19px;
+  }
+}

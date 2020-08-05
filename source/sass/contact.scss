@@ -3,18 +3,31 @@
   align-items: center;
 }
 
-.contact:before {
-  content: "";
+.contact__icon {
   width: 45px;
   height: 45px;
+  border-radius: 50%;
   margin-right: 16px;
 }
 
-.contact__icon {
+.contact__text {
+  @include reset-margin-text;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 
+  color: #192144;
 }
 
-.contact__text {
-  margin-top: ;
-  margin-bottom: 0;
+@media (min-width: $tablet-breakpoint) {
+  .contact__icon {
+    width: 68px;
+    height: 68px;
+  }
+
+  .contact__text {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
