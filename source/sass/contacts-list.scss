@@ -5,4 +5,8 @@
   align-items: flex-start;
 }
 
-.contacts-list__item {}
+@media (min-width: $desktop-breakpoint) {
+  .contacts-list {
+    flex-direction: row;
+  }
+}

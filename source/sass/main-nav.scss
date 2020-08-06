@@ -89,7 +89,7 @@
 
 @media (min-width: $tablet-breakpoint) {
   .main-nav {
-    --main-nav-item__margin-left: 50px;
+    --main-nav-item__margin-left: 8.28%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4, minmax(min-content, auto));
     grid-template-areas:
@@ -177,11 +177,17 @@
 
   .main-nav__site-nav {
     align-self: flex-start;
+    margin-left: 58px;
     margin-top: 67px; // rewrite
     margin-bottom: 0; // rewrite
   }
 
+  .main-nav__site-nav--size {
+    margin-left: 40px;
+  }
+
   .main-nav__user-nav {
+    justify-self: stretch;
     margin-top: 49px; // rewrite
     margin-bottom: 0; // rewrite
   }

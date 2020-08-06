@@ -3,19 +3,40 @@
   justify-content: center;
   align-items: center;
   background-color: #121936;
+  fill: $basic-yellow-color;
+}
+
+.icon--color-orange {
+  background-color: $special-orange;
+  fill: $basic-blue-color;
+}
+
+.icon--color-yellow {
+  background-color: $special-yellow-dark;
+  fill: $basic-blue-color;
 }
 
 .icon__contacts-phone {
   width: 16px;
   height: 15px;
-  fill: $basic-yellow-color;
 }
 
 .icon__contacts-mail {
   width: 18px;
   height: 12px;
-  fill: $basic-yellow-color;
 }
+
+.icon__contacts-second-phone {
+  width: 16px;
+  height: 16px;
+}
+
+.icon__contacts-second-mail {
+  width: 14px;
+  height: 11px;
+}
+
+
 
 @media (min-width: $tablet-breakpoint) {
   .icon__contacts-phone {

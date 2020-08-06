@@ -23,3 +23,16 @@
   padding: 15px;
   margin: -15px;
 }
+
+
+@mixin visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}
+
+@mixin visually-hidden--off {
+  position: static;
+  clip: auto;
+  overflow: visible;
+}
