@@ -3,6 +3,23 @@
   align-items: center;
 }
 
+.contact:hover .contact__icon {
+  fill: #ffbd30;
+}
+
+.contact:hover .contact__text {
+  color: #ffbd30;
+}
+
+.contact:active .contact__icon {
+  fill: rgba(#ffbd30, 0.3);
+}
+
+.contact:active .contact__text {
+  color: rgba(#ffbd30, 0.3);
+}
+
+
 .contact__icon {
   width: 45px;
   height: 45px;
@@ -42,10 +59,33 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .contact:hover .contact__icon {
+    background-color: #f26926;
+    fill: $basic-blue-color;
+  }
+
+  .contact:hover .contact__text {
+    color: $basic-blue-color;
+  }
+
+  .contact:active .contact__icon {
+    fill: rgba($basic-blue-color, 0.3);
+  }
+
+  .contact:hover .icon--color-yellow {
+    background-color: $special-orange;
+  }
+
+  .contact:active .contact__text {
+    color: rgba($basic-blue-color, 0.3);
+  }
+
+
   .contact__icon {
     @include visually-hidden;
     margin-right: 0;
   }
+
 
   .contact__icon--size {
     @include visually-hidden--off;
