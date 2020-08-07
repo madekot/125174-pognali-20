@@ -1,6 +1,5 @@
 .button-close {
   @include reset-button-styles;
-  @include increase-clickable-point;
 
   display: flex;
 
@@ -10,6 +9,10 @@
   font: inherit;
   fill: #cccccc;
   cursor: pointer;
+}
+
+.button-close--color {
+  fill: #ffffff;
 }
 
 .button-close--burger-icon .button-close__icon-close {

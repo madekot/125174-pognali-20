@@ -19,7 +19,6 @@
   color: rgba(#ffbd30, 0.3);
 }
 
-
 .contact__icon {
   width: 45px;
   height: 45px;
@@ -28,11 +27,13 @@
 }
 
 .contact__icon--size {
-  @include visually-hidden;
+  display: none;
+  //@include visually-hidden;
 }
 
 .contact__icon--second--style-icon {
-  @include visually-hidden;
+  display: none;
+  //@include visually-hidden;
 }
 
 .contact__text {
@@ -82,18 +83,26 @@
 
 
   .contact__icon {
-    @include visually-hidden;
+    //@include visually-hidden;
+    display: none;
     margin-right: 0;
   }
 
 
   .contact__icon--size {
-    @include visually-hidden--off;
+    //@include visually-hidden--off;
+    display: flex;
     width: 50px;
     height: 50px;
   }
 
   .contact__text {
-    @include visually-hidden;
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
   }
 }

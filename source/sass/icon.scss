@@ -26,6 +26,14 @@
   fill: #192144;
 }
 
+.icon--color-transparent:hover {
+  fill: rgba(#192144, 0.6);
+}
+
+.icon--color-transparent:active {
+  fill: rgba(#192144, 0.3)
+}
+
 .icon__contacts-phone {
   width: 16px;
   height: 15px;

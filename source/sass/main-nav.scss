@@ -49,6 +49,7 @@
 }
 
 .main-nav--no-js {
+  background-color: #ffffff;
   grid-template-areas:
           "logo close-button"
           "site-nav site-nav"
@@ -101,7 +102,7 @@
 }
 
 .main-nav__logo--size {
-  width: 96px; // rewrite
+  width: 96px;
 }
 
 .main-nav__close-button {
@@ -141,8 +142,6 @@
   justify-self: center;
 }
 
-// ============ tablet-breakpoint ============
-
 @media (min-width: $tablet-breakpoint) {
   .main-nav {
     --main-nav-item__margin-left: 8.28%;
@@ -180,37 +179,38 @@
   }
 
   .main-nav__logo {
-    width: 164px; // rewrite
-    height: 42px; // rewrite
+    width: 164px;
+    height: 42px;
   }
 
   .main-nav__logo--size {
-    width: 166px; // rewrite
+    width: 166px;
   }
 
   .main-nav__close-button {
     justify-self: center;
 
-    width: 22px; // rewrite
-    height: 22px; // rewrite
+    width: 22px;
+    height: 22px;
     margin-top: 14px;
-    margin-bottom: 108px; // rewrite
+    margin-bottom: 108px;
   }
 
   .main-nav__close-button--size {
     width: 25px;
     height: 11px;
+    margin-top: 0;
   }
 
   .main-nav__site-nav {
-    justify-self: stretch; // rewrite
+    justify-self: stretch;
     margin-left: var(--main-nav-item__margin-left);
-    margin-bottom: 144px; // rewrite
+    margin-bottom: 144px;
   }
 
   .main-nav__user-nav {
     justify-self: flex-end;
-    margin-bottom: 95px; // rewrite
+    margin-bottom: 95px;
   }
 
   .main-nav__contacts {
@@ -223,8 +223,6 @@
     margin-left: var(--main-nav-item__margin-left);
   }
 }
-
-// ============ desktop-breakpoint ============
 
 @media (min-width: $desktop-breakpoint) {
   .main-nav {
@@ -269,15 +267,15 @@
   }
 
   .main-nav__logo {
-    width: 198px; // rewrite
-    height: 60px; // rewrite
+    width: 198px;
+    height: 60px;
 
-    margin-bottom: 0; // rewrite
+    margin-bottom: 0;
   }
 
   .main-nav__logo--size {
-    width: 200px; // rewrite
-    height: 52px; // rewrite
+    width: 200px;
+    height: 52px;
   }
 
   .main-nav__close-button {
@@ -287,7 +285,7 @@
   .main-nav__site-nav {
     width: 479px;
     margin-left: 58px;
-    margin-bottom: 0; // rewrite
+    margin-bottom: 0;
   }
 
   .main-nav__site-nav--size {
@@ -296,14 +294,14 @@
 
   .main-nav__user-nav {
     justify-self: stretch;
-    margin-bottom: 0; // rewrite
+    margin-bottom: 0;
   }
 
   .main-nav__contacts {
     width: 100px;
-    justify-self: flex-end; // rewrite
+    justify-self: flex-end;
 
-    margin-bottom: 0; // rewrite
+    margin-bottom: 0;
   }
 
   .main-nav__social {
