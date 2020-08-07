@@ -1,4 +1,5 @@
 .main-nav {
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -14,6 +15,7 @@
 }
 
 .main-nav--close {
+  background-color: transparent;
   grid-template-areas:
           "logo close-button";
 }
@@ -191,7 +193,13 @@
 
     width: 22px; // rewrite
     height: 22px; // rewrite
+    margin-top: 14px;
     margin-bottom: 108px; // rewrite
+  }
+
+  .main-nav__close-button--size {
+    width: 25px;
+    height: 11px;
   }
 
   .main-nav__site-nav {
