@@ -9,10 +9,13 @@
           "social social";
 
   grid-template-rows: min-content;
+  padding-top: 25px;
+  padding-bottom: 29px;
 }
 
 .main-nav--close {
-  min-height: 80px;
+  grid-template-areas:
+          "logo close-button";
 }
 
 .main-nav--close .main-nav__logo {
@@ -41,6 +44,15 @@
 
 .main-nav--color {
   background-color: #ffffff;
+}
+
+.main-nav--no-js {
+  grid-template-areas:
+          "logo close-button"
+          "site-nav site-nav"
+          "user-nav user-nav"
+          "contacts contacts"
+          "social social";
 }
 
 .main-nav--no-js .main-nav__close-button {
@@ -83,7 +95,6 @@
   width: 100px;
   height: 15px;
 
-  //margin-top: 27px;
   margin-bottom: 76px;
 }
 
@@ -97,7 +108,6 @@
 
   width: 18px;
   height: 19px;
-  //margin-top: 25px;
   margin-bottom: 74px;
 }
 
@@ -127,8 +137,6 @@
 .main-nav__social {
   grid-area: social;
   justify-self: center;
-
-  margin-bottom: 41px;
 }
 
 // ============ tablet-breakpoint ============
@@ -137,13 +145,22 @@
   .main-nav {
     --main-nav-item__margin-left: 8.28%;
 
-    min-height: 132px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
             "logo close-button user-nav "
             "site-nav site-nav site-nav"
             "contacts contacts contacts"
             "social social social";
+    padding-top: 41px;
+    padding-bottom: 92px;
+  }
+
+  .main-nav--close {
+    align-items: center;
+    grid-template-areas: "logo close-button user-nav";
+
+    padding-top: 41px;
+    padding-bottom: 41px;
   }
 
   .main-nav--close .user-nav {
@@ -151,11 +168,18 @@
     margin-bottom: 0;
   }
 
+  .main-nav--no-js {
+    align-items: stretch;
+    grid-template-areas:
+            "logo close-button user-nav "
+            "site-nav site-nav site-nav"
+            "contacts contacts contacts"
+            "social social social";
+  }
+
   .main-nav__logo {
     width: 164px; // rewrite
     height: 42px; // rewrite
-
-    //margin-top: 45px; // rewrite
   }
 
   .main-nav__logo--size {
@@ -167,7 +191,6 @@
 
     width: 22px; // rewrite
     height: 22px; // rewrite
-    //margin-top: 55px; // rewrite
     margin-bottom: 108px; // rewrite
   }
 
@@ -179,7 +202,6 @@
 
   .main-nav__user-nav {
     justify-self: flex-end;
-    //margin-top: 40px;
     margin-bottom: 95px; // rewrite
   }
 
@@ -190,9 +212,7 @@
 
   .main-nav__social {
     justify-self: flex-start;
-    margin-bottom: 91px; // rewrite
     margin-left: var(--main-nav-item__margin-left);
-    min-width: 139px; // для сетки
   }
 }
 
@@ -202,10 +222,15 @@
   .main-nav {
     --main-nav-item__margin-left: 0;
 
-    min-height: 90px;
     grid-template-columns: minmax(200px, 1fr) 775px minmax(100px, 1fr) minmax(188px, 1fr);
     grid-template-areas:
             "logo site-nav contacts user-nav";
+    padding-top: 17px;
+    padding-bottom: 13px;
+  }
+
+  .main-nav__site-nav {
+    align-items: center;
   }
 
   .main-nav--close .main-nav__site-nav {
@@ -213,11 +238,14 @@
   }
 
   .main-nav--close .main-nav__user-nav {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .main-nav--close .main-nav__contacts {
     display: flex;
+    align-items: center;
   }
 
   .main-nav--close .main-nav__social {
@@ -236,7 +264,6 @@
     width: 198px; // rewrite
     height: 60px; // rewrite
 
-    //margin-top: 47px; // rewrite
     margin-bottom: 0; // rewrite
   }
 
@@ -250,9 +277,8 @@
   }
 
   .main-nav__site-nav {
-    //align-self: flex-start;
+    width: 479px;
     margin-left: 58px;
-    //margin-top: 67px; // rewrite
     margin-bottom: 0; // rewrite
   }
 
@@ -262,7 +288,6 @@
 
   .main-nav__user-nav {
     justify-self: stretch;
-    //margin-top: 49px; // rewrite
     margin-bottom: 0; // rewrite
   }
 
@@ -270,7 +295,6 @@
     width: 100px;
     justify-self: flex-end; // rewrite
 
-    //margin-top: 49px;
     margin-bottom: 0; // rewrite
   }
 
