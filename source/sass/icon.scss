@@ -1,0 +1,97 @@
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121936;
+  fill: $basic-yellow-color;
+}
+
+.icon--color-orange {
+  background-color: $special-orange;
+  fill: $basic-blue-color;
+}
+
+.icon--color-yellow {
+  background-color: $special-yellow-dark;
+  fill: $basic-blue-color;
+}
+
+.icon--color-base-yellow {
+  background-color: $basic-yellow-color;
+  fill: $basic-blue-color;
+}
+
+.icon--color-transparent {
+  background-color: transparent;
+  fill: #192144;
+}
+
+.icon--color-transparent:hover {
+  fill: rgba(#192144, 0.6);
+}
+
+.icon--color-transparent:active {
+  fill: rgba(#192144, 0.3);
+}
+
+.icon__contacts-phone {
+  width: 16px;
+  height: 15px;
+}
+
+.icon__contacts-mail {
+  width: 18px;
+  height: 12px;
+}
+
+.icon__contacts-second-phone {
+  width: 16px;
+  height: 16px;
+}
+
+.icon__contacts-second-mail {
+  width: 14px;
+  height: 11px;
+}
+
+.icon__facebook {
+  width: 11px;
+  height: 21px;
+}
+
+.icon__vk {
+  width: 23px;
+  height: 12px;
+}
+
+.icon__instagram {
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .icon__contacts-phone {
+    width: 24px;
+    height: 22px;
+  }
+
+  .icon__contacts-mail {
+    width: 28px;
+    height: 19px;
+  }
+
+  .icon__facebook {
+    width: 14px;
+    height: 28px;
+  }
+
+  .icon__vk {
+    width: 31px;
+    height: 16px;
+  }
+
+  .icon__instagram {
+    width: 22px;
+    height: 22px;
+  }
+}

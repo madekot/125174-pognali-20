@@ -1,0 +1,27 @@
+.social {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+}
+
+.social__facebook {
+  margin-right: 27px;
+}
+
+.social__vk {
+  margin-right: 26px;
+}
+
+.social__link {
+  @include increase-clickable-point;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .social__facebook {
+    margin-right: 37px;
+  }
+
+  .social__vk {
+    margin-right: 33px;
+  }
+}
