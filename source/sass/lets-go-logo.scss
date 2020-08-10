@@ -8,7 +8,7 @@
 }
 
 .lets-go-logo--color .lets-go-logo__wrapper-image {
-  background-image: url(../img/logo-mobile-white@1x.png);
+  background-image: url("../img/logo-mobile-white@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -39,7 +39,7 @@
 
 @media (min-width: $tablet-breakpoint) {
   .lets-go-logo--color .lets-go-logo__wrapper-image {
-    background-image: url(../img/logo-tablet-white@1x.png); // rewrite
+    background-image: url("../img/logo-tablet-white@1x.png"); // rewrite
   }
 }
 
@@ -47,6 +47,6 @@
 
 @media (min-width: $desktop-breakpoint) {
   .lets-go-logo--color .lets-go-logo__wrapper-image {
-    background-image: url(../img/logo-desktop-white@1x.png); // rewrite
+    background-image: url("../img/logo-desktop-white@1x.png"); // rewrite
   }
 }

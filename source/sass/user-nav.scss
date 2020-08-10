@@ -2,10 +2,6 @@
   @include reset-list;
 }
 
-.user-nav__item {}
-
-.user-nav__login-in-button {}
-
 @media (min-width: $tablet-breakpoint) {
   .user-nav__login-in-button {
     min-width: 188px;

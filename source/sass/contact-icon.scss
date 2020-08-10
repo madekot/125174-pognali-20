@@ -1,6 +1,4 @@
-.contact-icon {}
-
-.contact-icon:after {
+.contact-icon::after {
   content: "";
   background-color: #121936;
 }

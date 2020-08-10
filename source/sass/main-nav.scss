@@ -3,11 +3,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-          "logo close-button"
-          "site-nav site-nav"
-          "user-nav user-nav"
-          "contacts contacts"
-          "social social";
+    "logo close-button"
+    "site-nav site-nav"
+    "user-nav user-nav"
+    "contacts contacts"
+    "social social";
 
   grid-template-rows: min-content;
   padding-top: 25px;
@@ -16,8 +16,7 @@
 
 .main-nav--close {
   background-color: transparent;
-  grid-template-areas:
-          "logo close-button";
+  grid-template-areas: "logo close-button";
 }
 
 .main-nav--close .main-nav__logo {
@@ -44,18 +43,14 @@
   display: none;
 }
 
-.main-nav--color {
-  background-color: #ffffff;
-}
-
 .main-nav--no-js {
   background-color: #ffffff;
   grid-template-areas:
-          "logo close-button"
-          "site-nav site-nav"
-          "user-nav user-nav"
-          "contacts contacts"
-          "social social";
+    "logo close-button"
+    "site-nav site-nav"
+    "user-nav user-nav"
+    "contacts contacts"
+    "social social";
 }
 
 .main-nav--no-js .main-nav__close-button {
@@ -65,10 +60,6 @@
 
 .main-nav--no-js .main-nav__logo {
   margin-bottom: 76px;
-}
-
-.main-nav--no-js .main-nav__close-button {
-  margin-bottom: 0;
 }
 
 .main-nav--no-js .main-nav__site-nav {
@@ -148,10 +139,10 @@
 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-            "logo close-button user-nav "
-            "site-nav site-nav site-nav"
-            "contacts contacts contacts"
-            "social social social";
+      "logo close-button user-nav "
+      "site-nav site-nav site-nav"
+      "contacts contacts contacts"
+      "social social social";
     padding-top: 41px;
     padding-bottom: 92px;
   }
@@ -172,10 +163,10 @@
   .main-nav--no-js {
     align-items: stretch;
     grid-template-areas:
-            "logo close-button user-nav "
-            "site-nav site-nav site-nav"
-            "contacts contacts contacts"
-            "social social social";
+      "logo close-button user-nav "
+      "site-nav site-nav site-nav"
+      "contacts contacts contacts"
+      "social social social";
   }
 
   .main-nav__logo {
@@ -229,14 +220,9 @@
     --main-nav-item__margin-left: 0;
 
     grid-template-columns: minmax(200px, 1fr) 775px minmax(100px, 1fr) minmax(188px, 1fr);
-    grid-template-areas:
-            "logo site-nav contacts user-nav";
+    grid-template-areas: "logo site-nav contacts user-nav";
     padding-top: 17px;
     padding-bottom: 13px;
-  }
-
-  .main-nav__site-nav {
-    align-items: center;
   }
 
   .main-nav--close .main-nav__site-nav {
@@ -283,6 +269,7 @@
   }
 
   .main-nav__site-nav {
+    align-items: center;
     width: 479px;
     margin-left: 58px;
     margin-bottom: 0;
