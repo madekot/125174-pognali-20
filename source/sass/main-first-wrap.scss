@@ -1,4 +1,4 @@
-.main-first-wrap {
+.main-first-wrap__content {
   padding-top: 21px;
   padding-bottom: 39px;
   min-width: 320px;
@@ -52,12 +52,11 @@
 }
 
 .main-first-wrap__action-plan {
-  min-height: 320px;
-  background-color: tomato; // временно для сетки
+  //min-height: 320px;
 }
 
 @media (min-width: $tablet-breakpoint) {
-  .main-first-wrap {
+  .main-first-wrap__content {
     padding-top: 30px;
     padding-bottom: 96px;
     background-color: #182044;
@@ -92,12 +91,16 @@
   }
 
   .main-first-wrap__action-plan {
-    min-height: 280px; // временно для сетки
+    //min-height: 280px; // временно для сетки
   }
 }
 
 @media (min-width: $desktop-breakpoint) {
   .main-first-wrap {
+    background-color: #192144;
+  }
+
+  .main-first-wrap__content {
     min-height: 640px;
     padding-top: 0;
     padding-bottom: 123px;
@@ -136,6 +139,6 @@
 
   .main-first-wrap__action-plan {
     width: 100%;
-    min-height: 107px; // временно для сетки
+    //min-height: 107px; // временно для сетки
   }
 }
