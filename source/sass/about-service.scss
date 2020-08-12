@@ -3,6 +3,8 @@
 }
 
 .about-service__wrap {
+  position: relative;
+
   padding-top: 33px;
   padding-bottom: 82px;
 
@@ -13,15 +15,29 @@
   border-radius: 0 0 50px 50px;
 }
 
+.about-service__wrap::before {
+  position: absolute;
+  z-index: 10;
+
+  content: "";
+  width: 113px;
+  height: 132px;
+  background-color: rgba(#141b3b, 0.5);
+  top: 0;
+  left: 0;
+}
+
 .about-service__inner {
   padding-left: 15.31%;
   padding-right: 15.31%;
 }
 
+.about-service__content {
+  position: relative;
+  z-index: 20;
+}
+
 .about-service__title {
-  //width: 105px; // временно для сетки
-  //height: 24px; // временно для сетки
-  //background-color: rgba(tomato, 0.5); // временно для сетки
   margin-top: 0;
   margin-bottom: 19px;
 
@@ -34,10 +50,6 @@
 }
 
 .about-service__intro {
-  //width: 211px; // временно для сетки
-  //height: 109px; // временно для сетки
-  //background-color: rgba(tomato, 0.5);; // временно для сетки
-
   margin-top: 0;
   margin-bottom: 20px;
 
@@ -50,9 +62,7 @@
 }
 
 .about-service__first-text {
-  //width: 202px; // временно для сетки
-  //height: 66px; // временно для сетки
-  //background-color: rgba(tomato, 0.5);; // временно для сетки
+  margin-top: 0;
 
   font-weight: bold;
   font-size: 16px;
@@ -63,7 +73,6 @@
 
 .about-service__button-more {
   display: none;
-  //background-color: rgba(tomato, 0.5);; // временно для сетки
 }
 
 @media (min-width: $tablet-breakpoint) {
@@ -77,6 +86,16 @@
     background-position: right 10px top 48px;
   }
 
+  .about-service__wrap::before {
+    width: auto;
+    height: 212px;
+
+    border-radius: 20px;
+
+    right: 5.20%;
+    left: 5.20%;
+  }
+
   .about-service__inner {
     padding-left: 8.72%;
     padding-right: 8.72%;
@@ -87,9 +106,6 @@
   }
 
   .about-service__title {
-    //width: 197px; // временно для сетки
-    //height: 45px; // временно для сетки
-
     margin-bottom: 40px;
 
     font-size: 45px;
@@ -97,9 +113,6 @@
   }
 
   .about-service__intro {
-    //width: 308px; // временно для сетки
-    //height: 231px; // временно для сетки
-
     margin-bottom: 31px;
 
     font-size: 28px;
@@ -107,8 +120,6 @@
   }
 
   .about-service__first-text {
-    //width: 265px; // временно для сетки
-    //height: 75px; // временно для сетки
     font-size: 21px;
     line-height: 25px;
 
@@ -130,6 +141,17 @@
     background-color: #192144;
     background-image: url(../img/about-desktop@1x.png);
     background-position: right 60px top 85px;
+  }
+
+  .about-service__wrap::before {
+    width: 212px;
+    height: 212px;
+
+    border-radius: 20px;
+
+    top: 70px;
+    right: auto;
+    left: 5.20%;
   }
 
   .about-service__inner {
@@ -161,7 +183,6 @@
   }
 
   .about-service__button-more {
-    width: 274px; // временно для сетки
-    height: 80px; // временно для сетки
+    width: 274px;
   }
 }
