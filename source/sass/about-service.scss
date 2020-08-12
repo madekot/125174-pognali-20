@@ -1,0 +1,86 @@
+.about-service {
+  padding-top: 33px;
+  padding-bottom: 82px;
+
+  background-color: #192144;
+  background-image: url(../img/about-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: left 20px top 0;
+}
+
+.about-service__inner {
+  padding-left: 15.31%;
+  padding-right: 15.31%;
+}
+
+.about-service__title {
+  width: 105px; // временно для сетки
+  height: 24px; // временно для сетки
+  background-color: rgba(tomato, 0.5); // временно для сетки
+
+  margin-bottom: 19px;
+}
+
+.about-service__intro {
+  width: 211px; // временно для сетки
+  height: 109px; // временно для сетки
+  background-color: rgba(tomato, 0.5);; // временно для сетки
+
+  margin-bottom: 20px;
+}
+
+.about-service__first-text {
+  width: 202px; // временно для сетки
+  height: 66px; // временно для сетки
+  background-color: rgba(tomato, 0.5);; // временно для сетки
+}
+
+.about-service__button-more {
+  background-color: rgba(tomato, 0.5);; // временно для сетки
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .about-service {
+    padding-top: 41px;
+    padding-bottom: 89px;
+
+    background-color: #182044;
+    background-image: url(../img/about-tablet@1x.png);
+    background-position: right 10px top 48px;
+  }
+
+  .about-service__inner {
+    padding-left: 8.72%;
+    padding-right: 8.72%;
+  }
+
+  .about-service__content {
+    width: 50%;
+  }
+
+  .about-service__title {
+    width: 197px; // временно для сетки
+    height: 45px; // временно для сетки
+
+    margin-bottom: 40px;
+  }
+
+  .about-service__intro {
+    width: 308px; // временно для сетки
+    height: 231px; // временно для сетки
+
+    margin-bottom: 31px;
+  }
+
+  .about-service__first-text {
+    width: 265px; // временно для сетки
+    height: 75px; // временно для сетки
+
+    margin-bottom: 52px;
+  }
+
+  .about-service__button-more {
+    width: 276px; // временно для сетки
+    height: 80px; // временно для сетки
+  }
+}
