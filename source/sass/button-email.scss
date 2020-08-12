@@ -1,0 +1,31 @@
+.button-email {
+  display: flex;
+  color: $basic-blue-color;
+  background-color: $special-yellow-dark;
+}
+
+.button-email:hover {
+  background-color: $basic-yellow-color ;
+}
+
+.button-email:active {
+  color: rgba($basic-blue-color, 0.3);
+}
+
+.button-email__content {
+  @include reset-button-styles;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-grow: 1;
+}
+
+.button-email__icon {
+  flex-grow: 1;
+
+  fill: $basic-blue-color;
+  width: 16px;
+  height: 12px;
+}

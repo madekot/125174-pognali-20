@@ -1,0 +1,27 @@
+.button-phone {
+  display: flex;
+}
+
+.button-phone__item {
+  @include reset-button-styles;
+  flex-grow: 1;
+  border-radius: 50%;
+
+  color: $basic-blue-color;
+  background-color: $special-orange;
+}
+
+.button-phone__item:hover {
+  background-color: $basic-yellow-color ;
+}
+
+.button-phone__item:active {
+  color: rgba($basic-blue-color, 0.3);
+}
+
+.button-phone__icon-phone {
+  padding-top: 2px;
+  fill: $basic-blue-color;
+  width: 18px;
+  height: 18px;
+}

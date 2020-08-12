@@ -35,25 +35,18 @@
   width: 40px;
   min-height: 40px;
   border-radius: 50%;
-  background-color: tomato;
 }
 
 .main-first-wrap__button-automation-user {
   flex-grow: 1;
-  min-height: 40px; // временно для сетки
   border-radius: 25px;
-  background-color: tomato; // временно для сетки
 }
 
 .main-first-wrap__quote {
+  width: 161px;
   margin-bottom: 29px;
-  min-height: 128px; // временно для сетки
-  background-color: tomato; // временно для сетки
 }
 
-.main-first-wrap__action-plan {
-  //min-height: 320px;
-}
 
 @media (min-width: $tablet-breakpoint) {
   .main-first-wrap__content {
@@ -86,12 +79,8 @@
   }
 
   .main-first-wrap__quote {
-    min-height: 186px; // временно для сетки
+    width: 264px;
     margin-bottom: 211px;
-  }
-
-  .main-first-wrap__action-plan {
-    //min-height: 280px; // временно для сетки
   }
 }
 
@@ -139,6 +128,5 @@
 
   .main-first-wrap__action-plan {
     width: 100%;
-    //min-height: 107px; // временно для сетки
   }
 }
