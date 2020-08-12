@@ -1,4 +1,8 @@
 .about-service {
+  background-color: #edeff6;
+}
+
+.about-service__wrap {
   padding-top: 33px;
   padding-bottom: 82px;
 
@@ -6,6 +10,7 @@
   background-image: url(../img/about-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: left 20px top 0;
+  border-radius: 0 0 50px 50px;
 }
 
 .about-service__inner {
@@ -14,38 +19,61 @@
 }
 
 .about-service__title {
-  width: 105px; // временно для сетки
-  height: 24px; // временно для сетки
-  background-color: rgba(tomato, 0.5); // временно для сетки
-
+  //width: 105px; // временно для сетки
+  //height: 24px; // временно для сетки
+  //background-color: rgba(tomato, 0.5); // временно для сетки
+  margin-top: 0;
   margin-bottom: 19px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+
+  color: $special-orange;
 }
 
 .about-service__intro {
-  width: 211px; // временно для сетки
-  height: 109px; // временно для сетки
-  background-color: rgba(tomato, 0.5);; // временно для сетки
+  //width: 211px; // временно для сетки
+  //height: 109px; // временно для сетки
+  //background-color: rgba(tomato, 0.5);; // временно для сетки
 
+  margin-top: 0;
   margin-bottom: 20px;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
 }
 
 .about-service__first-text {
-  width: 202px; // временно для сетки
-  height: 66px; // временно для сетки
-  background-color: rgba(tomato, 0.5);; // временно для сетки
+  //width: 202px; // временно для сетки
+  //height: 66px; // временно для сетки
+  //background-color: rgba(tomato, 0.5);; // временно для сетки
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
 }
 
 .about-service__button-more {
-  background-color: rgba(tomato, 0.5);; // временно для сетки
+  display: none;
+  //background-color: rgba(tomato, 0.5);; // временно для сетки
 }
 
 @media (min-width: $tablet-breakpoint) {
-  .about-service {
+  .about-service__wrap {
     padding-top: 41px;
     padding-bottom: 89px;
 
     background-color: #182044;
     background-image: url(../img/about-tablet@1x.png);
+    background-repeat: no-repeat;
     background-position: right 10px top 48px;
   }
 
@@ -59,28 +87,81 @@
   }
 
   .about-service__title {
-    width: 197px; // временно для сетки
-    height: 45px; // временно для сетки
+    //width: 197px; // временно для сетки
+    //height: 45px; // временно для сетки
 
     margin-bottom: 40px;
+
+    font-size: 45px;
+    line-height: 45px;
   }
 
   .about-service__intro {
-    width: 308px; // временно для сетки
-    height: 231px; // временно для сетки
+    //width: 308px; // временно для сетки
+    //height: 231px; // временно для сетки
 
     margin-bottom: 31px;
+
+    font-size: 28px;
+    line-height: 33px;
   }
 
   .about-service__first-text {
-    width: 265px; // временно для сетки
-    height: 75px; // временно для сетки
+    //width: 265px; // временно для сетки
+    //height: 75px; // временно для сетки
+    font-size: 21px;
+    line-height: 25px;
 
     margin-bottom: 52px;
   }
 
   .about-service__button-more {
-    width: 276px; // временно для сетки
+    display: flex;
+    width: 276px;
+    min-height: 80px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .about-service__wrap {
+    padding-top: 132px;
+    padding-bottom: 163px;
+
+    background-color: #192144;
+    background-image: url(../img/about-desktop@1x.png);
+    background-position: right 60px top 85px;
+  }
+
+  .about-service__inner {
+    padding-left: 9.02%;
+    padding-right: 9.02%;
+  }
+
+  .about-service__content {
+    width: 619px;
+  }
+
+  .about-service__title {
+    margin-bottom: 57px;
+  }
+
+  .about-service__intro {
+    margin-bottom: 38px;
+
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .about-service__first-text {
+    width: 425px;
+    font-size: 21px;
+    line-height: 24px;
+
+    margin-bottom: 85px;
+  }
+
+  .about-service__button-more {
+    width: 274px; // временно для сетки
     height: 80px; // временно для сетки
   }
 }
