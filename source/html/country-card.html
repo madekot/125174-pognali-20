@@ -8,16 +8,30 @@
   <title>Document</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body style="background-color: aliceblue;">
   <div class="country-card">
-    <div class="country-card__image-country"></div>
+    <div class="country-card__wrap-image-country">
+      <picture>
+        <source srcset="../img/thailand-desktop@1x.jpg" media="(min-width: 688px)">
+        <img class="country-card__wrap-image" src="../img/thailand-mobile@1x.jpg" alt="" >
+      </picture>
+    </div>
     <div class="country-card__first-wrap">
-      <div class="country-card__image-flag"></div>
-      <div class="country-card__second-wrap">
-        <div class="country-card__title"></div>
-        <div class="country-card__lead"></div>
+      <div class="country-card__wrap-image-flag">
+
+        <picture>
+          <source srcset="../img/thailand-flag-tablet@1x.png" media="(min-width: 688px)">
+          <img class="country-card__image-flag" src="../img/thailand-flag-mobile@1x.png" alt="" >
+        </picture>
       </div>
-      <div class="country-card__counter"></div>
+      <div class="country-card__second-wrap">
+        <h3 class="country-card__title">Таиланд</h3>
+        <p class="country-card__lead">Джунгли зовут!</p>
+      </div>
+      <div class="country-card__wrap-counter">
+        <div class="country-card__icon-counter"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve"><path d="M16.4,15.1c-0.9-1.2-2-2-3.6-2.4l-1.5,5.2c0,0.5-0.4,0.9-0.9,0.9c-0.5,0-0.9-0.4-0.9-0.9v-4.2 c0-0.6-0.5-1.1-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1v4.2c0,0.5-0.4,0.9-0.9,0.9c-0.5,0-0.9-0.4-0.9-0.9l-1.5-5.2 c-1.6,0.4-2.7,1.2-3.6,2.4C0.2,15.6,0,16.6,0,17.1c0,0.1,0,0.3,0,0.4v0.9v0.9c0,1,0.8,1.7,1.7,1.7h13.5c1,0,1.7-0.8,1.7-1.7v-0.9 v-0.9c0-0.2,0-0.3,0-0.4C17,16.6,16.8,15.6,16.4,15.1z M3.9,4.6c0,2.6,1.6,6.3,4.6,6.3c2.9,0,4.6-3.8,4.6-6.3c0-2.6-2-4.6-4.6-4.6 C6,0,3.9,2.1,3.9,4.6z"/></svg></div>
+        <p class="country-card__counter">18321</p>
+      </div>
     </div>
   </div>
 </body>
