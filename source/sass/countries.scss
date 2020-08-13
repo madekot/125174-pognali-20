@@ -1,0 +1,162 @@
+.countries {
+  background-color: #192144;
+}
+
+.countries__wrap {
+  padding-top: 71px;
+  padding-bottom: 34px;
+  border-radius: 0 0 20px 20px;
+
+  background-color: #edeff6;
+}
+
+.countries__inner {
+  padding-left: 7.81%;
+  padding-right: 7.81%;
+}
+
+.countries__content {
+  display: grid;
+}
+
+.countries__title {
+  margin-top: 0;
+  margin-bottom: 19px;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+
+  color: $special-orange;
+}
+
+.countries__text {
+  width: 80%;
+
+  margin-top: 0;
+  margin-bottom: 60px;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $special_grey;
+}
+
+.countries__list {
+  min-height: 587px; // временно для сетки
+  background-color: tomato; // временно для сетки
+
+  list-style: none;
+  margin: 0 0 25px;
+  padding: 0;
+}
+
+.countries__button-more {
+  min-height: 62px; // временно для сетки
+
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .countries__wrap {
+    padding-top: 73px;
+    padding-bottom: 80px;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .countries__inner {
+    padding-left: 9.89%;
+    padding-right: 9.89%;
+  }
+
+  .countries__title {
+    font-size: 45px;
+    line-height: 45px;
+
+    margin-bottom: 57px;
+  }
+
+  .countries__text {
+    width: 61.36%;
+
+    margin-bottom: 104px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .countries__list {
+    min-height: 443px; // временно для сетки
+
+    margin-bottom: 44px;
+  }
+
+  .countries__button-more {
+    min-height: 82px; // временно для сетки
+
+    padding-left: 33px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .countries__wrap {
+    padding-top: 161px;
+    padding-bottom: 138px;
+  }
+
+  .countries__inner {
+    padding-left: 4.16%;
+    padding-right: 4.16%;
+  }
+
+  .countries__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+  }
+
+  .countries__title {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+
+    margin-bottom: 58px;
+    margin-left: 112px;
+  }
+
+  .countries__text {
+    width: 378px; // временно для сетки
+    min-height: 165px; // временно для сетки
+
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+
+    margin-bottom: 98px;
+    margin-left: 112px;
+  }
+
+  .countries__list {
+    width: 560px; // временно для сетки
+    min-height: 451px; // временно для сетки
+
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+
+
+    margin-bottom: 0;
+    margin-left: 70px;
+  }
+
+  .countries__button-more {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+
+    width: 275px; // временно для сетки
+    min-height: 80px;
+    margin-left: 112px;
+    padding-right: 36px;
+  }
+}

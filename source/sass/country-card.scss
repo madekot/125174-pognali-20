@@ -1,0 +1,136 @@
+.country-card {
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.country-card__image-country {
+  min-height: 110px; // временно для сетки
+  background-color: tomato; // временно для сетки
+}
+
+.country-card__first-wrap {
+  display: flex;
+  position: relative;
+
+  min-height: 105px; // временно для сетки
+  padding-top: 26px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+
+  background-color: antiquewhite; // временно для сетки
+
+  margin-top: -25px;
+  border-radius: 25px 25px 0 0;
+}
+
+.country-card__image-flag {
+  position: absolute;
+
+  width: 35px; // временно для сетки
+  height: 24px; // временно для сетки
+  left: 25px;
+  top: -12px;
+
+  border-radius: 7px;
+  overflow: hidden;
+
+  background-color: teal; // временно для сетки
+}
+
+.country-card__second-wrap {
+  margin-right: auto;
+}
+
+.country-card__title {
+  width: 80px; // временно для сетки
+  height: 21px; // временно для сетки
+
+  margin-bottom: 2px;
+
+  min-height: 21px; // временно для сетки
+  background-color: turquoise; // временно для сетки
+}
+
+.country-card__lead {
+  min-height: 16px; // временно для сетки
+  background-color: #ff8d30; // временно для сетки
+}
+
+.country-card__counter {
+  width: 61px; // временно для сетки
+  height: 16px; // временно для сетки
+  background-color: chartreuse; // временно для сетки
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .country-card {
+    display: flex;
+  }
+
+  .country-card__image-country {
+    width: 186px;
+    min-height: 140px; // временно для сетки
+    background-color: tomato; // временно для сетки
+  }
+
+  .country-card__first-wrap {
+    order: -1;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    min-height: 105px; // временно для сетки
+    padding-top: 30px;
+    padding-right: 26px;
+    padding-left: 26px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+
+    background-color: antiquewhite; // временно для сетки
+
+    margin-top: 0;
+    border-radius: 0;
+  }
+
+  .country-card__image-flag {
+    position: absolute;
+
+    width: 70px; // временно для сетки
+    height: 47px; // временно для сетки
+    left: auto;
+    right: -35px;
+    top: 17px;
+
+    background-color: teal; // временно для сетки
+  }
+
+  .country-card__second-wrap {
+    margin-right: auto;
+    margin-bottom: 17px;
+  }
+
+  .country-card__title {
+    width: 91px; // временно для сетки
+    height: 24px; // временно для сетки
+
+    margin-bottom: 5px;
+
+    min-height: 21px; // временно для сетки
+    background-color: turquoise; // временно для сетки
+  }
+
+  .country-card__lead {
+    min-height: 20px; // временно для сетки
+    background-color: #ff8d30; // временно для сетки
+  }
+
+  .country-card__counter {
+    width: 84px; // временно для сетки
+    height: 24px; // временно для сетки
+    background-color: chartreuse; // временно для сетки
+  }
+}

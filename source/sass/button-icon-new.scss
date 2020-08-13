@@ -1,41 +1,34 @@
-.button-icon {
-  min-height: 62px;
+.button-icon-new {
+  @include reset-button-styles;
 
   display: flex;
+  justify-content: space-between;
+  min-height: 62px;
+
   background-color: $basic-yellow-color;
 
   padding-left: 21px;
   padding-right: 23px;
   box-sizing: border-box;
   border-radius: 10px;
+
+  font-family: inherit;
+  align-items: center;
 }
 
-.button-icon:hover {
+.button-icon-new:hover {
   background-color: $special-yellow-dark ;
 }
 
-.button-icon:active .button-icon__text {
+.button-icon-new:active .button-icon-new__text {
   color: rgba($basic_blue_light, 0.3);
 }
 
-.button-icon:active .button-icon__icon {
+.button-icon-new:active .button-icon-new__icon {
   fill: rgba($basic_blue_light, 0.3);
 }
 
-.button-icon__content {
-  @include reset-button-styles;
-
-  font-family: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  flex-grow: 1;
-}
-
-.button-icon__text {
-  margin-right: auto;
-
+.button-icon-new__text {
   font-weight: 800;
   font-size: 18px;
   line-height: 18px;
@@ -43,26 +36,26 @@
   color: $basic_blue_light;
 }
 
-.button-icon__icon {
+.button-icon-new__icon {
   fill: $basic_blue_light;
   width: 16px;
   height: 12px;
 }
 
 @media (min-width: $tablet-breakpoint) {
-  .button-icon {
+  .button-icon-new {
     padding-left: 33px;
     padding-right: 36px;
   }
 
-  .button-icon__text {
+  .button-icon-new__text {
     font-size: 24px;
     line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-breakpoint) {
-  .button-icon {
+  .button-icon-new {
     padding-left: 32px;
     padding-right: 35px;
   }
