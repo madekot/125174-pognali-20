@@ -1,0 +1,186 @@
+.traveler-card__wrap-image,
+.traveler-card__level,
+.traveler-card__desired-countries,
+.traveler-card__indicator-online,
+.traveler-card__name,
+.traveler-card__tags,
+.traveler-card__desired-transport { // временно для сетки
+  background-color: tomato;
+}
+
+.traveler-card {
+  box-shadow: 0 0 10px black;
+}
+
+.traveler-card__top-wrap {
+  position: relative;
+}
+
+.traveler-card__wrap-image {
+  min-width: 270px;
+  height: 270px; // временно для сетки
+}
+
+.traveler-card__level {
+  position: absolute;
+  left: 17px;
+  top: 17px;
+
+  min-width: 60px;
+  height: 60px; // временно для сетки
+  background-color: antiquewhite; // временно для сетки
+}
+
+.traveler-card__bottom-wrap {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.traveler-card__desired-countries {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  max-width: 100%;
+  min-width: 53.7%;
+  height: 25px; // временно для сетки
+  background-color: aqua; // временно для сетки
+}
+
+.traveler-card__desired-countries-item {
+  min-width: 35px;
+  min-height: 25px;
+
+  background-color: azure; // временно для сетки
+}
+
+.traveler-card__first-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 15px;
+  margin-left: 19.62%;
+  margin-right: 25.55%;
+}
+
+.traveler-card__indicator-online {
+  min-width: 6px;
+  height: 6px; // временно для сетки
+
+  margin-right: 10px;
+}
+
+.traveler-card__name {
+  height: 21px; // временно для сетки
+}
+
+.traveler-card__tags {
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  min-width: 188px;
+  min-height: 36px; // временно для сетки
+  margin: 0 14.81% 14px 18.88%;
+}
+
+.traveler-card__tags-item {
+  margin-right: 5px;
+}
+
+.traveler-card__tags-item:last-of-type {
+  margin-right: 0;
+}
+
+.traveler-card__desired-transport {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  min-width: 44.44%;
+  height: 25px; // временно для сетки
+  align-self: center;
+}
+
+.traveler-card__desired-transport-item {
+  width: 30px;
+  height: 25px;
+  background-color: royalblue;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .traveler-card {
+    width: 285px;
+    margin: 0 auto;
+  }
+
+  .traveler-card__wrap-image {
+    min-width: 285px;
+    height: 286px; // временно для сетки
+  }
+
+  .traveler-card__level {
+    left: 22px;
+    top: 20px;
+
+    min-width: 60px;
+  }
+
+  .traveler-card__bottom-wrap {
+    padding-top: 31px;
+    padding-bottom: 27px;
+  }
+
+  .traveler-card__desired-countries {
+    max-width: 100%;
+    min-width: 53.33%;
+    height: 25px;
+    background-color: aqua;
+  }
+
+  .traveler-card__first-wrap {
+    min-width: 172px;
+    margin-bottom: 28px;
+    margin-left: 19.62%;
+    margin-right: 20.55%;
+  }
+
+  .traveler-card__indicator-online {
+    margin-right: 14px;
+  }
+
+  .traveler-card__name {
+    min-width: 150px;
+    height: 22px; // временно для сетки
+  }
+
+  .traveler-card__tags {
+    min-width: 78.24%;
+    height: 36px; // временно для сетки
+    margin-bottom: 24px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
