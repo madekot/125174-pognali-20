@@ -74,7 +74,8 @@
   height: 428px;
   margin-bottom: 9px;
   border-radius: 10px;
-  background-color: tomato; // всеменно для сетки
+  overflow: hidden;
+  background-color: #ffffff;
 }
 
 .travelers__cards-list-item:last-of-type {
