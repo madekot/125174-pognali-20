@@ -1,0 +1,106 @@
+// остановился на планшетной версии, думаю как сверстать перемещение кружочка с рублем
+
+.tariffs,
+.tariffs__lead,
+.tariffs__list-item,
+.tariffs__link-business-tariffs {
+  background-color: azure;
+}
+
+.tariffs {
+  padding: 37px 7.81% 38px 15.31%;
+  background-color: #e6e8f1;
+}
+
+.tariffs__lead {
+  width: 245px;
+  height: 100px;
+
+  margin-bottom: 34px;
+}
+
+.tariffs__list {
+  //width: 245px;
+  //height: 179px;
+
+  margin-bottom: 46px;
+}
+
+.tariffs__list-item {
+  width: 246px;
+  height: 48px;
+
+  margin-bottom: 20px;
+}
+
+.tariffs__list-item--size {
+  width: 245px;
+  height: 44px;
+}
+
+.tariffs__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.tariffs__link-business-tariffs {
+  width: 219px;
+  height: 16px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .tariffs {
+    padding-top: 74px;
+    padding-bottom: 45px;
+    padding-left: 5.20%;
+    padding-right: 5.20%;
+  }
+
+  .tariffs__lead {
+    width: 482px;
+    height: 45px;
+
+    margin-bottom: 71px;
+  }
+
+  .tariffs__list {
+    margin-bottom: 17px;
+  }
+
+  .tariffs__list-item {
+    width: 699px;
+    height: 68px;
+
+    margin-bottom: 0;
+  }
+
+  .tariffs__link-business-tariffs {
+    width: 643px;
+    height: 100px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .tariffs {
+    padding-top: 107px;
+    padding-bottom: 165px;
+    padding-left: 11.40%;
+    padding-right: 11.40%;
+  }
+
+  .tariffs__lead {
+    margin-bottom: 131px;
+  }
+
+  .tariffs__list {
+    margin-bottom: 30px;
+  }
+
+  .tariffs__list-item {
+
+  }
+
+  .tariffs__link-business-tariffs {
+    width: 363px;
+    height: 68px;
+  }
+}
