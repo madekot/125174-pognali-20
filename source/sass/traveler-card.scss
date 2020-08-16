@@ -9,7 +9,10 @@
 }
 
 .traveler-card {
-  box-shadow: 0 0 10px black;
+  width: 270px; // временно для сетки
+  margin: 0 auto; // временно для сетки
+
+  box-shadow: 0 0 10px black;  // временно для сетки
 }
 
 .traveler-card__top-wrap {

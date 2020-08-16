@@ -1,0 +1,64 @@
+.progress-indicator {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  background-color: rgba(#000000, 0.6);
+  border-radius: 50%;
+}
+
+.progress-indicator__content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-indicator__bar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  position: absolute;
+  box-shadow: inset 0 0 0 4px $special-orange;
+}
+
+.progress-indicator__number {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+.progress-indicator__number--line {
+  position: relative;
+}
+
+.progress-indicator__number--line::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+
+  position: absolute;
+  bottom: 0;
+
+  background-color: rgba(#ffffff, 0.3);
+  border-radius: 1px;
+}
+
+.progress-indicator__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 14px;
+
+  color: #ffffff;
+}
