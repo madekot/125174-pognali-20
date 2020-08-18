@@ -60,9 +60,69 @@
   min-height: 62px;
   margin-left: 7.81%;
   margin-right: 7.81%;
+  margin-bottom: 29px;
   padding-left: 25px;
 
   background-color: #ffffff;
+}
+
+.main-second-wrap__text {
+  margin-left: 17.18%;
+  margin-right: 15.31%;
+  margin-bottom: 17px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.main-second-wrap__contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  margin-left: 7.81%;
+  margin-right: 7.81%;
+}
+
+.main-second-wrap__contacts-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.main-second-wrap__contacts-list-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 45px;
+  min-height: 45px;
+  margin-right: 15px;
+  border-radius: 50%;
+
+  background-color: #121936;
+}
+
+.main-second-wrap__contacts-list-item-icon-content {
+  flex-grow: 1;
+  height: 15px;
+
+  fill: #ffd74b;
+
+  border-radius: 50%;
+}
+
+.main-second-wrap__contacts-list-item-icon--email-image {
+  height: 13px;
+}
+
+.main-second-wrap__contacts-list-item-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+
+  text-transform: uppercase;
+
+  color: $basic-yellow-color;
 }
 
 .main-second-wrap__input {
@@ -108,7 +168,7 @@
   .main-second-wrap__lead {
     margin-right: 24.21%;
     margin-bottom: 59px;
-    margin-left: 24.60%;
+    margin-left: 24.6%;
 
     font-size: 45px;
     line-height: 45px;
@@ -137,7 +197,18 @@
 
     margin-right: 9.89%;
     margin-left: 9.89%;
+    margin-bottom: 60px;
     padding-left: 36px;
+  }
+
+  .main-second-wrap__text {
+    margin-left: 10.54%;
+    margin-right: 9.5%;
+    margin-bottom: 40px;
+
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
   }
 
   .main-second-wrap__input {
@@ -157,7 +228,7 @@
 
     padding-left: 31px;
     padding-right: 33px;
-    padding-top: 2px
+    padding-top: 2px;
   }
 }
 
@@ -191,6 +262,18 @@
 
   .main-second-wrap__form {
     min-height: 81px;
+    margin-bottom: 70px;
+  }
+
+  .main-second-wrap__text {
+    margin-left: 28.33%;
+    margin-right: 29.02%;
+
+    text-align: center;
+
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
   }
 
   .main-second-wrap__submit-form {
