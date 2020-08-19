@@ -1,5 +1,5 @@
 .main-second-wrap {
-  background-image: linear-gradient(to bottom, #ffd74b 0, #ffd74b calc(100% - 50px), transparent calc(100% - 50px),  transparent 100%);
+  background-image: linear-gradient(to bottom, #ffd74b 0, #ffd74b calc(100% - 50px), transparent calc(100% - 50px), transparent 100%);
 }
 
 .main-second-wrap__first-wrap {
@@ -66,8 +66,14 @@
 .main-second-wrap__text {
   margin-left: 17.18%;
   margin-right: 15.31%;
+  margin-top: 0;
   margin-bottom: 17px;
   text-align: center;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
 
   color: #ffffff;
 }
@@ -208,7 +214,7 @@
 
 @media (min-width: $tablet-breakpoint) {
   .main-second-wrap__first-wrap {
-    padding-top: 136px;
+    padding-top: 76px;
     padding-bottom: 60px;
   }
 
@@ -297,11 +303,16 @@
   .main-second-wrap__wrap-address-contact {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 44px;
   }
 
   .main-second-wrap__address-button-get-directions {
+    min-height: 80px;
+
     margin-left: 0;
     margin-right: 0;
+    padding-left: 37px;
+    padding-right: 35px;
   }
 
   .main-second-wrap__input {
@@ -334,7 +345,7 @@
   .main-second-wrap__lead {
     margin-left: 11.57%;
     margin-right: 11.75%;
-    margin-bottom: 59px;
+    margin-bottom: 57px;
 
     font-size: 45px;
     line-height: 45px;
@@ -346,7 +357,7 @@
     margin-bottom: 60px;
 
     font-size: 28px;
-    line-height: 32px;
+    line-height: 30px;
   }
 
   .main-second-wrap__form {
@@ -357,6 +368,7 @@
   .main-second-wrap__text {
     margin-left: 28.33%;
     margin-right: 29.02%;
+    margin-bottom: 42px;
 
     text-align: center;
 
@@ -365,12 +377,9 @@
     letter-spacing: 0.01em;
   }
 
-  .main-second-wrap__wrap-address {
-    padding-top: 55px;
-    padding-bottom: 56px;
-  }
-
   .main-second-wrap__contacts-list {
+    min-height: 92px;
+
     margin-left: 19.72%;
     margin-right: 20%;
 
@@ -379,11 +388,50 @@
     justify-content: space-between;
   }
 
+  .main-second-wrap__contacts-list-item-icon {
+    width: 90px;
+    height: 90px;
+
+    margin-right: 31px;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  .main-second-wrap__contacts-list-item-icon--email-image {
+    padding-left: 28px;
+    padding-right: 25px;
+  }
+
   .main-second-wrap__submit-form {
     min-width: 324px;
 
     padding-left: 36px;
     padding-right: 34px;
+  }
+
+  .main-second-wrap__wrap-address {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-top: 55px;
+    padding-bottom: 56px;
+  }
+
+  .main-second-wrap__wrap-address-contact {
+    margin-bottom: 0;
+  }
+
+  .main-second-wrap__address-button-get-directions {
+    min-width: 324px;
+  }
+
+  .main-second-wrap__icon-address {
+    width: 90px;
+    height: 90px;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .main-second-wrap__submit-form .button-icon-new__text {
