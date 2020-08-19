@@ -1,12 +1,9 @@
 .main-second-wrap {
-  padding-top: 72px;
-  padding-bottom: 35px;
-  border-radius: 0 0 30px 30px;
-
-  background-image: linear-gradient(to bottom, #192144 0, #192144 50%, #ffd74b 50%, #ffd74b 100%);
+  background-image: linear-gradient(to bottom, #ffd74b 0, #ffd74b calc(100% - 50px), transparent calc(100% - 50px),  transparent 100%);
 }
 
 .main-second-wrap__first-wrap {
+  padding-top: 72px;
   padding-bottom: 29px;
   background-color: #192144;
 
@@ -91,31 +88,30 @@
 
 .main-second-wrap__contacts-list-item-icon {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 
-  min-width: 45px;
-  min-height: 45px;
-  margin-right: 15px;
+  margin-right: 16px;
+  padding-left: 14.65px;
+  padding-right: 14.65px;
+  box-sizing: border-box;
+
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
 
   background-color: #121936;
-}
-
-.main-second-wrap__contacts-list-item-icon-content {
-  flex-grow: 1;
-  height: 15px;
-
   fill: #ffd74b;
-
-  border-radius: 50%;
 }
 
 .main-second-wrap__contacts-list-item-icon--email-image {
-  height: 13px;
+  padding-left: 14.11px;
+  padding-right: 12.61px;
 }
 
 .main-second-wrap__contacts-list-item-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
@@ -155,13 +151,64 @@
   display: none;
 }
 
-@media (min-width: $tablet-breakpoint) {
-  .main-second-wrap {
-    padding-top: 76px;
-    padding-bottom: 84px;
-  }
+.main-second-wrap__wrap-address {
+  display: flex;
+  flex-direction: column;
 
+  padding-top: 31px;
+  padding-bottom: 35px;
+  border-radius: 0 0 30px 30px;
+
+  background-color: $basic-yellow-color;
+}
+
+.main-second-wrap__wrap-address-contact {
+  display: flex;
+  align-items: center;
+
+  margin-left: 7.81%;
+  margin-right: 28.43%;
+  margin-bottom: 33px;
+}
+
+.main-second-wrap__address-button-get-directions {
+  margin-left: 7.81%;
+  margin-right: 7.81%;
+  padding-left: 22px;
+  padding-right: 23px;
+}
+
+.main-second-wrap__icon-address {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+
+  margin-right: 16px;
+  padding: 0 14.62px;
+  box-sizing: border-box;
+
+  background-color: #121936;
+  fill: $basic-yellow-color;
+
+  border-radius: 50%;
+}
+
+.main-second-wrap__address-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+
+  text-transform: uppercase;
+
+  color: $basic_blue_light;
+}
+
+@media (min-width: $tablet-breakpoint) {
   .main-second-wrap__first-wrap {
+    padding-top: 136px;
     padding-bottom: 60px;
   }
 
@@ -211,6 +258,52 @@
     letter-spacing: 0.01em;
   }
 
+  .main-second-wrap__contacts-list-item-icon {
+    width: 68px;
+    height: 68px;
+
+    padding-left: 20.4px;
+    padding-right: 20.4px;
+
+    margin-right: 22px;
+  }
+
+  .main-second-wrap__contacts-list-item-text {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .main-second-wrap__wrap-address {
+    padding-left: 9.76%;
+    padding-right: 9.76%;
+    padding-top: 48px;
+    padding-bottom: 84px;
+  }
+
+  .main-second-wrap__icon-address {
+    width: 68px;
+    height: 68px;
+
+    padding-left: 22.1px;
+    padding-right: 22.1px;
+    margin-right: 26px;
+  }
+
+  .main-second-wrap__address-text {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .main-second-wrap__wrap-address-contact {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .main-second-wrap__address-button-get-directions {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .main-second-wrap__input {
     font-size: 24px;
     line-height: 24px;
@@ -233,12 +326,8 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
-  .main-second-wrap {
-    padding-top: 109px;
-    padding-bottom: 56px;
-  }
-
   .main-second-wrap__first-wrap {
+    padding-top: 109px;
     padding-bottom: 102px;
   }
 
@@ -274,6 +363,20 @@
     font-size: 28px;
     line-height: 30px;
     letter-spacing: 0.01em;
+  }
+
+  .main-second-wrap__wrap-address {
+    padding-top: 55px;
+    padding-bottom: 56px;
+  }
+
+  .main-second-wrap__contacts-list {
+    margin-left: 19.72%;
+    margin-right: 20%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .main-second-wrap__submit-form {

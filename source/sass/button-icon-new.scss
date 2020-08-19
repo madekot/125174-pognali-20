@@ -14,19 +14,49 @@
 
   font-family: inherit;
   align-items: center;
+
+  &:hover {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active .button-icon-new__text {
+    color: rgba($basic_blue_light, 0.3);
+  }
+
+  &:active .button-icon-new__icon {
+    fill: rgba($basic_blue_light, 0.3);
+  }
+
+  &--border-theme {
+    box-shadow: inset 0 0 0 2px $basic_blue_light;
+  }
+
+  &--border-theme:hover {
+    background-color: #192144;
+  }
+
+  &--border-theme:hover .button-icon-new__text {
+    color: #ffffff;
+  }
+
+  &--border-theme:hover .button-icon-new__icon {
+    fill: #ffffff;
+  }
+
+  &--border-theme:active {
+    background-color: #192144;
+  }
+
+  &--border-theme:active .button-icon-new__text {
+    color: rgba(#ffffff, 0.3);
+  }
+
+  &--border-theme:active .button-icon-new__icon {
+    fill:rgba(#ffffff, 0.3);
+  }
 }
 
-.button-icon-new:hover {
-  background-color: $special-yellow-dark;
-}
 
-.button-icon-new:active .button-icon-new__text {
-  color: rgba($basic_blue_light, 0.3);
-}
-
-.button-icon-new:active .button-icon-new__icon {
-  fill: rgba($basic_blue_light, 0.3);
-}
 
 .button-icon-new__text {
   font-weight: 800;
