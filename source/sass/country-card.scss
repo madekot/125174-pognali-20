@@ -1,0 +1,172 @@
+.country-card {
+  min-width: 270px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.country-card__wrap-image-country {
+  min-height: 110px; // временно для сетки
+  background-color: tomato; // временно для сетки
+}
+
+.country-card__wrap-image {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.country-card__first-wrap {
+  display: flex;
+  position: relative;
+
+  min-height: 105px; // временно для сетки
+  margin-top: -25px;
+  border-radius: 10px 10px 0 0;
+  padding: 26px 24px 24px;
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+}
+
+.country-card__wrap-image-flag {
+  position: absolute;
+
+  width: 35px; // временно для сетки
+  height: 24px; // временно для сетки
+  left: 25px;
+  top: -12px;
+
+  border-radius: 10px;
+  overflow: hidden;
+
+  background-color: teal; // временно для сетки
+}
+
+.country-card__image-flag {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.country-card__second-wrap {
+  margin-right: auto;
+}
+
+.country-card__title {
+  margin-top: 0;
+  margin-bottom: 2px;
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.country-card__lead {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: rgba($special_grey, 0.3);
+}
+
+.country-card__wrap-counter {
+  display: flex;
+}
+
+.country-card__icon-counter {
+  width: 10px;
+  height: 12px;
+
+  margin-right: 7px;
+  fill: rgba(#192144, 0.1);
+}
+
+.country-card__counter {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: rgba(#161c35, 0.3);
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .country-card {
+    display: flex;
+    border-radius: 20px;
+  }
+
+  .country-card__wrap-image-country {
+    width: 186px;
+    min-height: 140px; // временно для сетки
+    background-color: tomato; // временно для сетки
+  }
+
+  .country-card__first-wrap {
+    order: -1;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    min-height: 105px; // временно для сетки
+    padding: 30px 26px 20px;
+    box-sizing: border-box;
+
+    margin-top: 0;
+    border-radius: 0;
+  }
+
+  .country-card__wrap-image-flag {
+    position: absolute;
+
+    width: 70px; // временно для сетки
+    height: 47px; // временно для сетки
+    left: auto;
+    right: -35px;
+    top: 17px;
+
+    background-color: teal; // временно для сетки
+  }
+
+  .country-card__second-wrap {
+    margin-right: auto;
+    margin-bottom: 17px;
+  }
+
+  .country-card__title {
+    margin-bottom: 5px;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .country-card__lead {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .country-card__icon-counter {
+    width: 18px;
+    height: 20px;
+    margin-right: 11px;
+  }
+
+  .country-card__counter {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

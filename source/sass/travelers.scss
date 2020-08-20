@@ -1,0 +1,214 @@
+.travelers {
+  padding: 68px 7.81% 31px;
+  border-radius: 0 0 50px 50px;
+
+  background-color: #192144;
+  background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 143px 143px, auto auto;
+  background-position: top 34px right 25px, top 307px left -20px;
+}
+
+.travelers__content {
+  display: grid;
+  position: relative;
+  z-index: 10;
+}
+
+.travelers__content::before {
+  content: "";
+  width: 113px;
+  height: 132px;
+
+  position: absolute;
+  z-index: -10;
+  top: -34px;
+  left: -49px;
+  background-color: #141b3b;
+  border-radius: 20px;
+}
+
+.travelers__title {
+  margin-top: 0;
+  margin-bottom: 19px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+
+  color: #ff8d30;
+}
+
+.travelers__info {
+  width: 80.37%;
+  margin-top: 0;
+  margin-bottom: 21px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.travelers__text {
+  margin-top: 0;
+  margin-bottom: 54px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.travelers__cards-list {
+  margin: 0 0 20px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.travelers__cards-list-item {
+  height: 428px;
+  margin-bottom: 9px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.travelers__cards-list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.travelers__button-more {
+  min-height: 61px; // всеменно для сетки
+
+  padding-right: 23px;
+  padding-left: 23px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .travelers {
+    padding: 141px 9.63% 87px;
+
+    background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png");
+    background-size: 143px 143px, 285px 285px;
+    background-position: top 426px left 40px, top 80px right 74px;
+  }
+
+  .travelers__content::before {
+    width: 212px;
+    height: 212px;
+
+    top: -70px;
+    left: -33px;
+    border-radius: 20px;
+  }
+
+  .travelers__title {
+    margin-bottom: 54px;
+
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .travelers__info {
+    width: 68.87%;
+    margin-bottom: 39px;
+
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .travelers__text {
+    width: 260px; // всеменно для сетки
+    margin-bottom: 59px;
+
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  .travelers__cards-list {
+    display: flex;
+    margin-bottom: 81px;
+  }
+
+  .travelers__cards-list-item {
+    width: 50%;
+    min-height: 483px;
+
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+
+  .travelers__cards-list-item:last-of-type {
+    margin-right: 0;
+  }
+
+  .travelers__button-more {
+    height: 80px; // всеменно для сетки
+    padding-left: 32px;
+    padding-right: 35px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .travelers {
+    padding: 130px 4.16% 134px 8.95%;
+    background-size: 143px 143px, 285px 285px;
+    background-position: top 134px left 547px, left 190px top 386px;
+  }
+
+  .travelers__content::before {
+    top: -60px;
+    left: -69px;
+    border-radius: 20px;
+  }
+
+  .travelers__content {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 193px;
+  }
+
+  .travelers__info {
+    width: auto;
+    margin-bottom: 30px;
+
+    line-height: 33px;
+  }
+
+  .travelers__text {
+    width: auto;
+    margin-bottom: 85px;
+  }
+
+  .travelers__cards-list {
+    grid-column: 2 / -1;
+    grid-row: 1 / 5;
+
+    min-width: 630px; // всеменно для сетки
+
+    margin-bottom: 0;
+  }
+
+  .travelers__cards-list-item {
+    min-height: 483px; // всеменно для сетки
+    min-width: 285px; // всеменно для сетки
+
+    margin-right: 60px;
+    border-radius: 20px;
+  }
+
+  .travelers__button-more {
+    justify-self: flex-start;
+    align-self: flex-end;
+
+    width: auto;
+    min-width: 280px;
+    min-height: 80px;
+  }
+}
