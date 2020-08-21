@@ -1,3 +1,12 @@
+@import "icon";
+@import "button-close";
+@import "lets-go-logo";
+@import "site-nav";
+@import "user-nav";
+@import "contacts-list";
+@import "contact";
+@import "social";
+
 .main-nav {
   background-color: #ffffff;
   display: grid;
@@ -15,8 +24,8 @@
 }
 
 .main-nav--close {
-  background-color: transparent;
   grid-template-areas: "logo close-button";
+  background-color: #161c35;
 }
 
 .main-nav--close .main-nav__logo {
@@ -39,7 +48,7 @@
   display: none;
 }
 
-.main-nav--close .main-nav__social {
+.main-nav--close .main-nav__social-list {
   display: none;
 }
 
@@ -74,7 +83,7 @@
   display: block;
 }
 
-.main-nav--no-js .main-nav__social {
+.main-nav--no-js .main-nav__social-list {
   display: flex;
 }
 
@@ -128,7 +137,7 @@
   margin-bottom: 41px;
 }
 
-.main-nav__social {
+.main-nav__social-list {
   grid-area: social;
   justify-self: center;
 }
@@ -153,11 +162,17 @@
 
     padding-top: 41px;
     padding-bottom: 41px;
+
+    background-color: #182044;
   }
 
   .main-nav--close .user-nav {
     display: block;
     margin-bottom: 0;
+  }
+
+  .main-nav--color {
+    background-color: #ffffff;
   }
 
   .main-nav--no-js {
@@ -167,6 +182,8 @@
       "site-nav site-nav site-nav"
       "contacts contacts contacts"
       "social social social";
+
+    background-color: #ffffff;
   }
 
   .main-nav__logo {
@@ -209,7 +226,7 @@
     margin-bottom: 129px;
   }
 
-  .main-nav__social {
+  .main-nav__social-list {
     justify-self: flex-start;
     margin-left: var(--main-nav-item__margin-left);
   }
@@ -223,6 +240,10 @@
     grid-template-areas: "logo site-nav contacts user-nav";
     padding-top: 17px;
     padding-bottom: 13px;
+  }
+
+  .main-nav--close {
+    background-color: #161c35;
   }
 
   .main-nav--close .main-nav__site-nav {
@@ -240,11 +261,15 @@
     align-items: center;
   }
 
-  .main-nav--close .main-nav__social {
+  .main-nav--close .main-nav__social-list {
     display: none;
   }
 
   .main-nav--color {
+    background-color: #ffffff;
+  }
+
+  .main-nav--no-js {
     background-color: #ffffff;
   }
 
@@ -291,7 +316,7 @@
     margin-bottom: 0;
   }
 
-  .main-nav__social {
+  .main-nav__social-list {
     display: none;
   }
 }

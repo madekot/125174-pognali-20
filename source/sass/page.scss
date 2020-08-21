@@ -1,3 +1,50 @@
 .page {
   margin: 0;
+  display: grid;
+}
+
+.page__header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.page__header--no-js {
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
+}
+
+.page__main-nav {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 7.81%;
+  padding-right: 7.5%;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .page__main-nav {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 5.2%;
+    padding-right: 5.2%;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .page__main-nav {
+    padding-top: 47px;
+    padding-bottom: 47px;
+    padding-left: 4.16%;
+    padding-right: 4.16%;
+  }
+
+  .page__header--no-js {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 }
