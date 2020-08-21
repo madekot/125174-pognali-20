@@ -1,3 +1,5 @@
+@import "button-icon";
+
 .about-service {
   background-color: #edeff6;
 }
@@ -12,7 +14,7 @@
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: left 20px top 0;
-  border-radius: 0 0 50px 50px;
+  border-radius: 0 0 30px 30px;
 }
 
 .about-service__wrap::before {

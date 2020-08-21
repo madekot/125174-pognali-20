@@ -3,11 +3,11 @@
   display: grid;
 }
 
-.page__header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
+.page__header { // временно для разработки
+  //position: sticky;
+  //top: 0;
+  //left: 0;
+  //right: 0;
 }
 
 .page__header--no-js {
@@ -22,6 +22,16 @@
   padding-bottom: 28px;
   padding-left: 7.81%;
   padding-right: 7.5%;
+}
+
+.page__main-second-wrap {
+  position: relative;
+  z-index: 10;
+}
+
+.page__footer {
+  position: relative;
+  z-index: 10;
 }
 
 @media (min-width: $tablet-breakpoint) {
