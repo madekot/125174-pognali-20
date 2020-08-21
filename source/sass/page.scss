@@ -1,13 +1,19 @@
 .page {
-  margin: 0;
   display: grid;
+  max-width: 1440px;
+  
+  margin: 0 auto;
+
+  background-color: #182044;
 }
 
 .page__header { // временно для разработки
-  //position: sticky;
-  //top: 0;
-  //left: 0;
-  //right: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 30;
 }
 
 .page__header--no-js {
@@ -19,7 +25,11 @@
 
 .page__main-nav {
   padding-top: 28px;
+
+
   padding-bottom: 28px;
+
+
   padding-left: 7.81%;
   padding-right: 7.5%;
 }
@@ -46,7 +56,11 @@
 @media (min-width: $desktop-breakpoint) {
   .page__main-nav {
     padding-top: 47px;
+    padding-top: 13px;
+
     padding-bottom: 47px;
+    padding-bottom: 17px;
+
     padding-left: 4.16%;
     padding-right: 4.16%;
   }
