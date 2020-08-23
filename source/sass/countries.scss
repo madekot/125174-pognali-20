@@ -8,7 +8,7 @@
 .countries__wrap {
   padding-top: 71px;
   padding-bottom: 34px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 $mobile-border-radius-block $mobile-border-radius-block;
 
   background-color: #edeff6;
 }
@@ -70,7 +70,7 @@
   .countries__wrap {
     padding-top: 73px;
     padding-bottom: 80px;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 $tablet-border-radius-block $tablet-border-radius-block;
   }
 
   .countries__inner {

@@ -1,7 +1,7 @@
 .page {
   display: grid;
   max-width: 1440px;
-  
+
   margin: 0 auto;
 
   background-color: #182044;
@@ -34,6 +34,15 @@
   padding-right: 7.5%;
 }
 
+.page__wrapper-travelers {
+  background-color: #e6e8f1;
+}
+
+.page__travelers {
+  overflow: hidden;
+  border-radius: 0 0 $mobile-border-radius-block $mobile-border-radius-block;
+}
+
 .page__main-second-wrap {
   position: relative;
   z-index: 10;
@@ -50,6 +59,10 @@
     padding-bottom: 40px;
     padding-left: 5.2%;
     padding-right: 5.2%;
+  }
+
+  .page__travelers {
+    border-radius: 0 0 $tablet-border-radius-block $tablet-border-radius-block;
   }
 }
 

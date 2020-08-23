@@ -9,12 +9,12 @@
 
   padding-top: 33px;
   padding-bottom: 82px;
+  border-radius: 0 0 $mobile-border-radius-block $mobile-border-radius-block;
 
   background-color: #192144;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: left 20px top 0;
-  border-radius: 0 0 30px 30px;
 }
 
 .about-service__wrap::before {
@@ -80,6 +80,7 @@
   .about-service__wrap {
     padding-top: 41px;
     padding-bottom: 89px;
+    border-radius: 0 0 $tablet-border-radius-block $tablet-border-radius-block;
 
     background-color: #182044;
     background-image: url("../img/about-tablet@1x.png");

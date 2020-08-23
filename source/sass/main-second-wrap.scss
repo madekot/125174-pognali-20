@@ -7,7 +7,7 @@
   padding-bottom: 29px;
   background-color: #192144;
 
-  border-radius: 0 0 30px 30px;
+  border-radius: 0 0 $mobile-border-radius-block $mobile-border-radius-block;
 }
 
 .main-second-wrap__lead {
@@ -163,7 +163,7 @@
 
   padding-top: 31px;
   padding-bottom: 35px;
-  border-radius: 0 0 30px 30px;
+  border-radius: 0 0 $mobile-border-radius-block $mobile-border-radius-block;
 
   background-color: $basic-yellow-color;
 }
@@ -216,6 +216,7 @@
   .main-second-wrap__first-wrap {
     padding-top: 76px;
     padding-bottom: 60px;
+    border-radius: 0 0 $tablet-border-radius-block $tablet-border-radius-block;
   }
 
   .main-second-wrap__lead {
@@ -289,6 +290,7 @@
     padding-right: 9.76%;
     padding-top: 48px;
     padding-bottom: 84px;
+    border-radius: 0 0 $tablet-border-radius-block $tablet-border-radius-block;
   }
 
   .main-second-wrap__icon-address {

@@ -3,7 +3,7 @@
   --basic-yellow-color: #ffd74b;
 
   --basic-blue-color: #161c35;
-  //--basic-blue-color--transparent: rgba(#161C35, 0.3);
+  --basic-blue-color--transparent: rgba(#161C35, 0.3);
 
   --special-orange: #ff8d30;
 
@@ -21,3 +21,7 @@ $special_grey: #444444;
 // breakpoints
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1440px;
+
+// border-radius-blocks
+$mobile-border-radius-block: 30px;
+$tablet-border-radius-block: 50px;

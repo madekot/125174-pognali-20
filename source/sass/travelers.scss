@@ -3,7 +3,7 @@
 
 .travelers {
   padding: 68px 7.81% 31px;
-  border-radius: 0 0 50px 50px;
+  border-radius: 0 0 $mobile-border-radius-block $mobile-border-radius-block;
 
   background-color: #192144;
   background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-mobile@1x.png");
@@ -95,6 +95,7 @@
 @media (min-width: $tablet-breakpoint) {
   .travelers {
     padding: 141px 9.63% 87px;
+    border-radius: 0 0 $tablet-border-radius-block $tablet-border-radius-block;
 
     background-image: url("../img/smolov-back-desktop@1x.png"), url("../img/rogovaya-back-desktop@1x.png");
     background-size: 143px 143px, 285px 285px;

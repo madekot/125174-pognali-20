@@ -3,8 +3,9 @@
   grid-template-columns: 1fr 1fr;
 
   padding: 37px 7.81% 38px 15.31%;
+  border-radius: 0 0 $mobile-border-radius-block $mobile-border-radius-block;
+
   background-color: #edeff6;
-  border-radius: 0 0 25px 25px;
 }
 
 .tariffs::before {
@@ -142,9 +143,9 @@
     padding-bottom: 45px;
     padding-left: 5.2%;
     padding-right: 5.2%;
+    border-radius: 0 0 $tablet-border-radius-block $tablet-border-radius-block;
 
     grid-template-columns: 1fr min-content;
-    border-radius: 0 0 70px 70px;
   }
 
   .tariffs::before {
