@@ -78,6 +78,27 @@
     padding-right: 9.89%;
   }
 
+  .countries__content {
+    position: relative;
+    z-index: 10;
+  }
+
+  .countries__content::before {
+    content: "";
+
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    right: -36px;
+
+    width: 288px;
+    height: 574px;
+
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .countries__title {
     font-size: 45px;
     line-height: 45px;
@@ -95,7 +116,23 @@
   }
 
   .countries__list {
+    position: relative;
+
     margin-bottom: 44px;
+  }
+
+  .countries__list::before {
+    content: "";
+
+    position: absolute;
+    top: -38px;
+    left: -36px;
+
+    width: 141px;
+    height: 141px;
+    border-radius: 20px;
+
+    background-color: #e2e5f2;
   }
 
   .countries__list-item {
@@ -138,6 +175,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 60px;
+  }
+
+  .countries__content::before {
+    top: -73px;
+    right: 0;
+
+    width: 287px;
+    height: 575px;
+
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .countries__title {

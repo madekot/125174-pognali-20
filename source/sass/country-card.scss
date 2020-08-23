@@ -6,7 +6,6 @@
 
 .country-card__wrap-image-country {
   min-height: 110px; // временно для сетки
-  background-color: tomato; // временно для сетки
 }
 
 .country-card__wrap-image {
@@ -21,8 +20,8 @@
   display: flex;
   position: relative;
 
-  min-height: 105px; // временно для сетки
-  margin-top: -25px;
+  min-height: 90px; // временно для сетки
+  margin-top: -11px;
   border-radius: 10px 10px 0 0;
   padding: 26px 24px 24px;
   box-sizing: border-box;
@@ -38,7 +37,7 @@
   left: 25px;
   top: -12px;
 
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
 
   background-color: teal; // временно для сетки
@@ -111,7 +110,6 @@
   .country-card__wrap-image-country {
     width: 186px;
     min-height: 140px; // временно для сетки
-    background-color: tomato; // временно для сетки
   }
 
   .country-card__first-wrap {
