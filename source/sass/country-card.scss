@@ -168,3 +168,9 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .country-card__first-wrap {
+    padding-top: 20px;
+  }
+}

@@ -63,6 +63,10 @@
   color: #ffffff;
 }
 
+.about-service__intro-br {
+  display: none;
+}
+
 .about-service__first-text {
   margin-top: 0;
   font-weight: bold;
@@ -99,8 +103,8 @@
   }
 
   .about-service__inner {
-    padding-left: 8.72%;
-    padding-right: 8.72%;
+    padding-left: 9.72%;
+    padding-right: 9.72%;
   }
 
   .about-service__content {
@@ -121,6 +125,10 @@
     line-height: 33px;
   }
 
+  .about-service__intro-br {
+    display: inline;
+  }
+
   .about-service__first-text {
     font-size: 21px;
     line-height: 25px;
@@ -137,7 +145,7 @@
 
 @media (min-width: $desktop-breakpoint) {
   .about-service__wrap {
-    padding-top: 132px;
+    padding-top: 120px;
     padding-bottom: 163px;
 
     background-color: #192144;
@@ -174,6 +182,10 @@
 
     font-size: 28px;
     line-height: 34px;
+  }
+
+  .about-service__intro-br {
+    display: none;
   }
 
   .about-service__first-text {

@@ -108,12 +108,16 @@
     line-height: 45px;
 
     margin-bottom: 57px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .countries__text {
     width: 61.36%;
 
     margin-bottom: 104px;
+    margin-left: 0;
+    margin-right: 0;
 
     font-size: 28px;
     line-height: 33px;
@@ -159,8 +163,11 @@
   }
 
   .countries__button-more {
+    min-height: 82px;
+
     padding-left: 33px;
     padding-right: 32px;
+    border-radius: 20px;
   }
 }
 

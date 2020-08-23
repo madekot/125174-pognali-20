@@ -67,6 +67,10 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .page {
+    padding-top: 33px;
+  }
+
   .page__main-nav {
     padding-top: 47px;
     padding-top: 13px;

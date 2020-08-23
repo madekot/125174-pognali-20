@@ -59,6 +59,10 @@
   color: #ffffff;
 }
 
+.travelers__info-br {
+  display: none;
+}
+
 .travelers__text {
   margin-top: 0;
   margin-bottom: 54px;
@@ -70,6 +74,10 @@
   line-height: 22px;
 
   color: #ffffff;
+}
+
+.travelers__text-br {
+  display: none;
 }
 
 .travelers__cards-list {
@@ -118,6 +126,8 @@
 
   .travelers__title {
     margin-bottom: 54px;
+    margin-left: 0;
+    margin-right: 0;
 
     font-size: 45px;
     line-height: 45px;
@@ -125,20 +135,34 @@
 
   .travelers__info {
     width: 68.87%;
+
     margin-bottom: 39px;
+    margin-left: 0;
+    margin-right: 0;
 
     font-weight: 300;
     font-size: 28px;
     line-height: 34px;
   }
 
+  .travelers__info-br {
+    display: inline;
+  }
+
   .travelers__text {
     width: 260px; // всеменно для сетки
+
     margin-bottom: 59px;
+    margin-right: 0;
+    margin-left: 0;
 
     font-weight: bold;
     font-size: 21px;
     line-height: 24px;
+  }
+
+  .travelers__text-br {
+    display: inline;
   }
 
   .travelers__cards-list {
@@ -159,9 +183,11 @@
   }
 
   .travelers__button-more {
-    height: 80px; // всеменно для сетки
+    min-height: 80px;
+
     padding-left: 32px;
     padding-right: 35px;
+    border-radius: 20px;
   }
 }
 
@@ -185,7 +211,7 @@
 
   .travelers__info {
     width: auto;
-    margin-bottom: 30px;
+    margin-bottom: 42px;
 
     line-height: 33px;
   }

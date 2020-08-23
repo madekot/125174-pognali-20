@@ -421,8 +421,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    padding-top: 55px;
+    padding-top: 60px;
     padding-bottom: 56px;
+    padding-left: 19.76%;
+    padding-right: 9.5%;
   }
 
   .main-second-wrap__wrap-address-contact {
@@ -430,7 +432,10 @@
   }
 
   .main-second-wrap__address-button-get-directions {
+    align-self: center;
     min-width: 324px;
+    min-height: 80px;
+    border-radius: 25px;
   }
 
   .main-second-wrap__icon-address {

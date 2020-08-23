@@ -167,8 +167,10 @@
     grid-column: 1 / -1;
 
     width: auto;
-    margin-left: 15.26%;
-    margin-right: 14.68%;
+
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 0;
     margin-bottom: 74px;
 
     font-size: 45px;
@@ -284,7 +286,7 @@
     padding-top: 107px;
     padding-bottom: 165px;
     padding-left: 9%;
-    padding-right: 9.23%;
+    padding-right: 6%;
   }
 
   .tariffs::before {
@@ -301,6 +303,8 @@
 
   .tariffs__lead {
     margin-bottom: 131px;
+    margin-left: 14%;
+    margin-right: 17%;
   }
 
   .tariffs__list {
