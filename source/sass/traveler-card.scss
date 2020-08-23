@@ -45,20 +45,30 @@
   list-style: none;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 
   position: absolute;
-  top: -12px;
+  bottom: calc(100% - 17px);
   left: 50%;
   transform: translateX(-50%);
 
   max-width: 100%;
-  min-width: 53.7%;
+  width: 100%;
 }
 
 .traveler-card__desired-countries-item {
   min-width: 35px;
+  margin-right: 20px;
+}
+
+.traveler-card__desired-countries-item:last-of-type {
+  margin-right: 0;
+}
+
+.traveler-card__desired-countries-item-flag {
+  width: 35px;
+  height: 25px;
 }
 
 .traveler-card__first-wrap {
@@ -102,9 +112,8 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  min-width: 188px;
   min-height: 36px; // временно для сетки
-  margin: 0 14.81% 14px 18.88%;
+  margin: 0 13.81% 14px 17.88%;
 }
 
 .traveler-card__tags-item {
@@ -184,6 +193,10 @@
     height: 286px; // временно для сетки
   }
 
+  .traveler-card__desired-countries-item-flag {
+    height: 24px;
+  }
+
   .traveler-card__level {
     left: 22px;
     top: 20px;
@@ -222,8 +235,8 @@
   .traveler-card__tags {
     margin-bottom: 24px;
 
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 4.03%;
+    margin-right: 4.03%;
   }
 
   .traveler-card__tags-item {
