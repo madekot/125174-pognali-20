@@ -1,6 +1,5 @@
 @import "progress-indicator";
 
-.form-main-first-wrap__user-level-content {}
 
 .form-main-first-wrap {
   display: grid;
@@ -102,10 +101,12 @@
 .form-main-first-wrap__transports {
   grid-area: transports;
 
-  height: 70px;
-
   margin-left: 25px;
   margin-right: 25px;
+  padding-left: 71px;
+  padding-right: 71px;
+  padding-top: 15px;
+  padding-bottom: 16px;
 
   border-radius: 10px;
 }

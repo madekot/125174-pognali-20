@@ -9,6 +9,19 @@
   align-items: baseline;
 }
 
+.transports-list--color .transports-list__item {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  background-color: #ffffff;
+}
+
+.transports-list--size .transports-list__icon {
+  width: 17px;
+  height: 16px;
+}
+
 .transports-list__item {
   width: 30px;
   height: 25px;
@@ -53,7 +66,3 @@
   width: 17px;
   height: 19px;
 }
-
-
-
-
