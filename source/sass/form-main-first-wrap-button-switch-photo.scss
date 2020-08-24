@@ -1,0 +1,35 @@
+.form-main-first-wrap__button-switch-photo {
+  @include reset-button-styles;
+
+  grid-area: button-switch-photo;
+
+  height: 40px;
+
+  border-radius: 25px;
+
+  margin-top: 18px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+  cursor: pointer;
+
+  background-color: #dfe3f0;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: #161C35;
+}
+
+.form-main-first-wrap__button-switch-photo:hover {
+  background-color: #d1d7e9;
+}
+
+.form-main-first-wrap__button-switch-photo:active {
+  background-color: #dfe3f0;
+  color: rgba(#161C35, 0.3);
+}

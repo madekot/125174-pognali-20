@@ -7,6 +7,42 @@
   border-radius: 50%;
 }
 
+.progress-indicator--color {
+  background-color: transparent;
+}
+
+.progress-indicator--color .progress-indicator__number {
+  color: #161c35;
+}
+
+.progress-indicator--color .progress-indicator__title {
+  color: #161c35;
+}
+
+.progress-indicator--color .progress-indicator__number--line::before {
+  background-color: $special_grey;
+}
+
+.progress-indicator--size .progress-indicator__number {
+  font-size: 38px;
+  line-height: 38px;
+}
+
+.progress-indicator--size .progress-indicator__title {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.progress-indicator--size .progress-indicator__number--line::before {
+  width: 51px;
+  left: -4px;
+}
+
+.progress-indicator--size .progress-indicator__number {
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+}
+
 .progress-indicator__content {
   position: relative;
 

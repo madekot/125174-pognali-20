@@ -1,0 +1,59 @@
+.transports-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.transports-list__item {
+  width: 30px;
+  height: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transports-list__item--active .transports-list__icon--size-plane {
+  fill: #101d41;
+}
+
+
+.transports-list__item--active .transports-list__icon {
+  fill: $basic_blue_light;
+}
+
+.transports-list__icon {
+  width: 17px;
+  height: 19px;
+
+  fill: rgba(#1d2e5b, 0.3);
+}
+
+.transports-list__icon--size-plane {
+  width: 23px;
+  height: 22px;
+}
+
+.transports-list__icon--size-bus {
+  width: 19px;
+  height: 20px;
+}
+
+.transports-list__icon--size-bike {
+  width: 22px;
+  height: 19px;
+}
+
+.transports-list__icon--size-run {
+  width: 17px;
+  height: 19px;
+}
+
+
+
+

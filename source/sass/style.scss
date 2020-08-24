@@ -3,7 +3,11 @@
 @import "mixins";
 @import "visually-hidden";
 @import "local-global-styles";
-@import "form/form-main-first-wrap";
+@import "tags-list";
+@import "form-main-first-wrap-button-switch-photo";
+@import "form-main-first-wrap-field";
+@import "form-main-first-wrap";
+@import "transports-list";
 //@import "button";
 //@import "main-nav";
 //@import "main-first-wrap";
@@ -15,3 +19,4 @@
 //@import "contact-map";
 //@import "footer";
 //@import "page";
+
