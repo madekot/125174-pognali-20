@@ -56,7 +56,6 @@
   background-color: #ff8d30;
 }
 
-
 .form-main-first-wrap__user-level {
   grid-area: user-level;
 
@@ -93,7 +92,7 @@
 
   margin-left: 25px;
   margin-right: 25px;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
 
   border-radius: 10px;
 }
@@ -110,6 +109,14 @@
 
   border-radius: 10px;
 }
+
+.form-main-first-wrap__button-switch-photo {
+  margin-top: 18px;
+  margin-bottom: 33px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 
 @media (min-width: $tablet-breakpoint) {
   .form-main-first-wrap {
