@@ -35,7 +35,6 @@
   fill: #101d41;
 }
 
-
 .transports-list__item--active .transports-list__icon {
   fill: $basic_blue_light;
 }
@@ -65,4 +64,16 @@
 .transports-list__icon--size-run {
   width: 17px;
   height: 19px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .transports-list--size .transports-list__item {
+    width: 43px;
+    height: 43px;
+  }
+
+  .transports-list--size .transports-list__icon {
+    width: 23px;
+    height: 22px;
+  }
 }

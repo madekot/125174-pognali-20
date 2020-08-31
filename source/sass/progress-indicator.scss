@@ -98,3 +98,17 @@
 
   color: #ffffff;
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .progress-indicator--color .progress-indicator__number {
+    color: #ffffff;
+  }
+
+  .progress-indicator--color .progress-indicator__title {
+    color: #ffffff;
+  }
+
+  .progress-indicator--color .progress-indicator__number--line::before {
+    background-color: rgba(#ffffff, 0.3);
+  }
+}

@@ -8,6 +8,10 @@
   flex-wrap: wrap;
 }
 
+.tags-list--color .tags-list__item{
+  color: rgba($special_grey, 0.6);
+}
+
 
 .tags-list--justify-start {
   justify-content: start;

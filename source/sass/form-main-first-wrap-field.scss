@@ -33,3 +33,22 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-breakpoint) {
+  .form-main-first-wrap-field__title {
+    top: auto;
+    bottom: -7px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .form-main-first-wrap-field__title--position-left {
+    left: 22px;
+    transform: translate(0);
+  }
+}
