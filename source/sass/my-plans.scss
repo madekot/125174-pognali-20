@@ -1,0 +1,75 @@
+.my-plans {
+  padding-top: 28px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  border-radius: $mobile-border-radius-block $mobile-border-radius-block 0 0;
+  background-color: #dfe3f0;
+}
+
+.my-plans__title {
+  margin-bottom: 29px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+
+  color: #1D2E5B;
+}
+
+.my-plans__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.my-plans__list-item {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.my-plans__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .my-plans {
+    padding-top: 57px;
+    padding-bottom: 76px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .my-plans__title {
+    margin-bottom: 48px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .my-plans__list-item {
+    margin-bottom: 11px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .my-plans {
+    padding-top: 54px;
+    padding-bottom: 64px;
+    padding-left: 124px;
+    padding-right: 58px;
+
+    border-radius: $tablet-border-radius-block $tablet-border-radius-block 0 0;
+  }
+
+  .my-plans__title {
+    margin-bottom: 49px;
+  }
+
+  .my-plans__list-item {
+    margin-bottom: 15px;
+    border-radius: 15px;
+  }
+}
