@@ -23,11 +23,6 @@
   background-color: $special_grey;
 }
 
-.progress-indicator--size .progress-indicator__number {
-  font-size: 38px;
-  line-height: 38px;
-}
-
 .progress-indicator--size .progress-indicator__title {
   font-size: 18px;
   line-height: 18px;
@@ -39,6 +34,9 @@
 }
 
 .progress-indicator--size .progress-indicator__number {
+  font-size: 38px;
+  line-height: 38px;
+
   padding-bottom: 3px;
   margin-bottom: 5px;
 }
