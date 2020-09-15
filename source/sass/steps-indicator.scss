@@ -1,0 +1,21 @@
+.steps-indicator {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps-indicator__item {
+  width: 5px;
+  height: 5px;
+
+  background-color: rgba(#1d2e5b, 0.3);
+  border-radius: 50%;
+}
+
+.steps-indicator__item--active {
+  background-color: #1d2e5b;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  width: 6px;
+  height: 6px;
+}

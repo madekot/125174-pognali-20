@@ -1,0 +1,115 @@
+.add-plan-travel {
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 43px;
+
+  border-radius: $mobile-border-radius-block $mobile-border-radius-block 0 0;
+
+  background-color: #d4d9eb;
+}
+
+.add-plan-travel__top-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 29px;
+}
+
+.add-plan-travel__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+
+  color: #1d2e5b;
+}
+
+.add-plan-travel__steps-plan-indicator {
+  margin-right: 18px;
+}
+
+.add-plan-travel__steps-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  margin-bottom: 22px;
+}
+
+.add-plan-travel__steps-list-item {
+  margin-bottom: 10px;
+
+  border-radius: 10px;
+}
+
+.add-plan-travel__steps-list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .add-plan-travel {
+    padding-top: 53px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 63px;
+
+    border-radius: $tablet-border-radius-block $tablet-border-radius-block 0 0;
+  }
+
+  .add-plan-travel__top-wrap {
+    margin-bottom: 56px;
+  }
+
+  .add-plan-travel__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .add-plan-travel__steps-plan-indicator {
+    margin-right: 0;
+  }
+
+  .add-plan-travel__steps-list {
+    margin-bottom: 49px;
+  }
+
+  .add-plan-travel__steps-list-item {
+    margin-bottom: 39px;
+
+    border-right: $tablet-border-radius-block;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .add-plan-travel {
+    padding-top: 55px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 70px;
+  }
+
+  .add-plan-travel__top-wrap {
+    margin-bottom: 54px;
+  }
+
+  .add-plan-travel__title {}
+
+  .add-plan-travel__steps-plan-indicator {
+    display: none;
+  }
+
+  .add-plan-travel__steps-list {
+    margin-bottom: 57px;
+  }
+
+  .add-plan-travel__steps-list-item {
+    margin-bottom: 44px;
+
+    border-radius: 50px;
+  }
+}

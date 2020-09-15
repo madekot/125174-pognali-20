@@ -1,22 +1,30 @@
+// Базывые блоки, шрифты, mixins, variables
 @import "fonts";
 @import "variables";
 @import "mixins";
 @import "visually-hidden";
 @import "local-global-styles";
-@import "my-plans";
-//@import "tags-list";
-//@import "form-main-first-wrap-button-switch-photo";
-//@import "form-main-first-wrap-field";
-//@import "form-main-first-wrap";
+@import "button";
+//
+// Повторно использованные суб блоки
+@import "steps-indicator";
+//@import "progress-indicator";
 //@import "transports-list";
-//@import "button";
+//@import "footer";
+//
+// Суб блоки
+@import "add-plan-travel";
+//@import "my-plans";
+//@import "tags-list";
+//@import "form-main-first-wrap";
 //@import "main-nav";
 //@import "main-first-wrap";
+//@import "main-second-wrap";
 //@import "about-service";
 //@import "countries";
 //@import "travelers";
 //@import "tariffs";
-//@import "main-second-wrap";
 //@import "contact-map";
-//@import "footer";
-//@import "page";
+//
+// Главные блоки
+@import "page";
