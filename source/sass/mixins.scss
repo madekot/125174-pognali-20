@@ -11,6 +11,16 @@
   box-sizing: content-box;
 }
 
+@mixin reset-input-style {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  background: none;
+  line-height: 1;
+}
+
 @mixin reset-margin-text {
   margin-top: 0;
   margin-bottom: 0;

@@ -16,6 +16,8 @@
 }
 
 @media (min-width: $tablet-breakpoint) {
-  width: 6px;
-  height: 6px;
+  .steps-indicator__item {
+    width: 6px;
+    height: 6px;
+  }
 }

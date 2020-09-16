@@ -1,0 +1,154 @@
+.dates-stay {
+  padding-top: 24px;
+  padding-bottom: 23px;
+  padding-left: 21px;
+  padding-right: 20px;
+
+  background-color: #ffffff;
+}
+
+.dates-stay__top-wrap {
+  margin-bottom: 16px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+
+  color: #1d2e5b;
+}
+
+.dates-stay__step-number {}
+
+.dates-stay__title {}
+
+.dates-stay__steps-indicator {
+  display: none;
+}
+
+.dates-stay__text-description {
+  margin-bottom: 19px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $special_grey;
+}
+
+.dates-stay__first-wrap {
+  margin-bottom: 23px;
+}
+
+.dates-stay__number-travelers {
+  margin-bottom: 21px;
+}
+
+.dates-stay__amount-days {
+  margin-bottom: 20px;
+}
+
+.dates-stay__have-children {}
+
+.dates-stay__calendar {
+  margin-bottom: 22px;
+}
+
+.dates-stay__next-step {}
+
+@media (min-width: $tablet-breakpoint) {
+  .dates-stay {
+    padding-top: 48px;
+    padding-bottom: 56px;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+  .dates-stay__top-wrap {
+    margin-bottom: 35px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .dates-stay__step-number {}
+
+  .dates-stay__title {}
+
+  .dates-stay__steps-indicator {}
+
+  .dates-stay__text-description {
+    margin-bottom: 38px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .dates-stay__first-wrap {
+    margin-bottom: 60px;
+  }
+
+  .dates-stay__number-travelers {
+    margin-bottom: 25px;
+  }
+
+  .dates-stay__amount-days {}
+
+  .dates-stay__have-children {
+    margin-bottom: 27px;
+  }
+
+  .dates-stay__calendar {
+    margin-bottom: 47px;
+  }
+
+  .dates-stay__next-step {}
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .dates-stay {
+    padding-top: 101px;
+    padding-bottom: 106px;
+    padding-left: 152px;
+    padding-right: 152px;
+  }
+
+  .dates-stay__top-wrap {
+    display: flex;
+
+    margin-bottom: 33px;
+  }
+
+  .dates-stay__step-number {}
+
+  .dates-stay__title {}
+
+  .dates-stay__steps-indicator {
+    display: block;
+
+    margin-right: 47px;
+  }
+
+  .dates-stay__text-description {
+    margin-bottom: 55px;
+  }
+
+  .dates-stay__first-wrap {
+    margin-bottom: 33px;
+  }
+
+  .dates-stay__number-travelers {
+    margin-bottom: 14px;
+  }
+
+  .dates-stay__amount-days {}
+
+  .dates-stay__have-children {
+    margin-bottom: 0;
+  }
+
+  .dates-stay__calendar {
+    margin-bottom: 57px;
+  }
+
+  .dates-stay__next-step {}
+}

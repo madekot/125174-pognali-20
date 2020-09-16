@@ -1,3 +1,6 @@
+@import "dates-stay";
+@import "quantity-field";
+
 .add-plan-travel {
   padding-top: 30px;
   padding-left: 25px;
@@ -30,6 +33,7 @@
 }
 
 .add-plan-travel__steps-plan-indicator {
+  width: 47px;
   margin-right: 18px;
 }
 
@@ -71,6 +75,7 @@
   }
 
   .add-plan-travel__steps-plan-indicator {
+    width: 76px;
     margin-right: 0;
   }
 
