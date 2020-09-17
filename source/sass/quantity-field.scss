@@ -206,9 +206,13 @@
   .quantity-field {
     padding-top: 0;
     align-items: center;
+
+    box-shadow: none;
   }
 
   .quantity-field__title {
+    min-width: 164px;
+
     margin-bottom: 0;
     margin-right: 57px;
 

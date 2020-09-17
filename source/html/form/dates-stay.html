@@ -17,8 +17,26 @@
     </div>
     <div class="dates-stay__text-description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</div>
     <div class="dates-stay__first-wrap">
-      <div class="dates-stay__number-travelers"></div>
-      <div class="dates-stay__amount-days"></div>
+      <div class="dates-stay__number-travelers quantity-field">
+        <h3 class="quantity-field__title">ищу попутчиков:</h3>
+        <div class="quantity-field__units">чел.</div>
+        <div class="quantity-field__first-wrap">
+          <input class="quantity-field__input" type="text" value="2" id="fellow-travelers-input">
+          <button class="quantity-field__button"></button>
+          <button class="quantity-field__button quantity-field__button--order-before quantity-field__button--icon-increase"></button>
+          <label class="quantity-field__label" for="fellow-travelers-input"><span class="visually-hidden">Количество попутчиков</span></label>
+        </div>
+      </div>
+      <div class="dates-stay__amount-days quantity-field">
+        <h3 class="quantity-field__title">длительность:</h3>
+        <div class="quantity-field__units">дн.</div>
+        <div class="quantity-field__first-wrap">
+          <input class="quantity-field__input" type="text" value="2" id="fellow-duration-travel-input">
+          <button class="quantity-field__button"></button>
+          <button class="quantity-field__button quantity-field__button--order-before quantity-field__button--icon-increase"></button>
+          <label class="quantity-field__label" for="fellow-duration-travel-input"><span class="visually-hidden">Количество попутчиков</span></label>
+        </div>
+      </div>
       <div class="dates-stay__have-children"></div>
     </div>
     <div class="dates-stay__calendar"></div>
