@@ -16,9 +16,9 @@
   border: 0;
   padding: 0;
   display: inline-block;
+  font: inherit;
   vertical-align: middle;
   background: none;
-  line-height: 1;
 }
 
 @mixin reset-margin-text {

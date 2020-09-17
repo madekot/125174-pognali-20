@@ -36,6 +36,8 @@
 .quantity-field__first-wrap {
   display: flex;
 
+  position: relative;
+
   width: 100%;
   min-height: 43px;
 
@@ -47,22 +49,116 @@
 .quantity-field__button {
   @include reset-button-styles;
 
-  width: 42px;
+  order: -1;
 
-  background-color: antiquewhite;
+  position: relative;
+
+  width: 60px;
 }
 
-.quantity-field__button--reduce {}
+.quantity-field__button--order-before {
+  order: 1;
+}
 
-.quantity-field__button--increase {}
+.quantity-field__button:hover::before {
+  background-color: #999999;
+}
+
+.quantity-field__button:hover::after {
+  background-color: #999999;
+}
+
+.quantity-field__button:active::before {
+  background-color: #e5e5e5;
+}
+
+.quantity-field__button:active::after {
+  background-color: #e5e5e5;
+}
+
+.quantity-field__button::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  right: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 14px;
+  height: 2px;
+
+  background-color: #cccccc;
+}
+
+.quantity-field__button--icon-increase::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  right: 50%;
+
+  transform: translate(-50%, -50%) rotate(90deg);
+
+  width: 14px;
+  height: 2px;
+
+  background-color: #cccccc;
+}
 
 .quantity-field__input {
   @include reset-input-style;
+  outline: none;
 
   flex-grow: 1;
+
+  font-weight: 500;
+  font-size: 14.86px;
+  line-height: 14px;
+
+  text-transform: uppercase;
+
+  color: #1d2e5b;
+
   text-align: center;
 }
 
+.quantity-field__input:hover ~ .quantity-field__label {
+  box-shadow: inset 0 0 0 1px #959bb2;
+}
+
+.quantity-field__input:hover ~ .quantity-field__button::before {
+  background-color: #959bb2;
+}
+
+.quantity-field__input:hover ~ .quantity-field__button::after {
+  background-color: #959bb2;
+}
+
+.quantity-field__input:focus ~ .quantity-field__button::before {
+  background-color: #161c35;
+}
+
+.quantity-field__input:focus ~ .quantity-field__button::after {
+  background-color: #161c35;
+}
+
+.quantity-field__input:focus ~ .quantity-field__label {
+  box-shadow: inset 0 0 0 1px #161c35;
+}
+
+.quantity-field__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+
+  border-radius: 5px;
+}
 
 @media (min-width: $tablet-breakpoint) {
   .quantity-field {
@@ -88,20 +184,28 @@
     letter-spacing: 0.08em;
   }
 
-  .quantity-field__first-wrap {}
+  .quantity-field__first-wrap {
+    min-height: 70px;
+  }
 
-  .quantity-field__button {}
+  .quantity-field__button::before {
+    width: 20px;
+  }
 
-  .quantity-field__button--reduce {}
+  .quantity-field__button--icon-increase::after {
+    width: 20px;
+  }
 
-  .quantity-field__button--increase {}
-
-  .quantity-field__input {}
+  .quantity-field__input {
+    font-size: 20px;
+    line-height: 18px;
+  }
 }
 
 @media (min-width: $desktop-breakpoint) {
   .quantity-field {
-    padding-top: 30px;
+    padding-top: 0;
+    align-items: center;
   }
 
   .quantity-field__title {
@@ -112,19 +216,24 @@
   }
 
   .quantity-field__units {
+    order: 1;
+
     margin-bottom: 0;
 
     letter-spacing: normal;
     opacity: 1;
   }
 
-  .quantity-field__first-wrap {}
+  .quantity-field__first-wrap {
+    width: 180px;
+    margin-right: 35px;
+  }
 
-  .quantity-field__button {}
+  .quantity-field__button {
+    flex-shrink: 0;
+  }
 
-  .quantity-field__button--reduce {}
-
-  .quantity-field__button--increase {}
-
-  .quantity-field__input {}
+  .quantity-field__input {
+    width: 100%;
+  }
 }
