@@ -1,3 +1,4 @@
+@import "calendar";
 @import "dates-stay";
 @import "quantity-field";
 @import "checkbox-field";
@@ -103,7 +104,7 @@
     margin-bottom: 54px;
   }
 
-  .add-plan-travel__title {}
+  //.add-plan-travel__title {}
 
   .add-plan-travel__steps-plan-indicator {
     display: none;
