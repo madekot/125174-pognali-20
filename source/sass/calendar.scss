@@ -42,6 +42,8 @@
 
 .calendar__wrap-months-grids-list {
   width: 221px;
+  padding-left: 1px;
+
   overflow: hidden;
 
   display: flex;
@@ -59,10 +61,11 @@
 }
 
 .calendar__months-grids-item {
-  width: 221px;
+  width: 222px;
   height: 187px;
 
-  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
 }
 
 .calendar__name-day {
@@ -99,16 +102,18 @@
   }
 
   .calendar__wrap-months-grids-list {
-    width: 531px;
+    width: 533px;
   }
 
   .calendar__months-grids-list {
-    height: 414px;
+    height: 415px;
   }
 
   .calendar__months-grids-item {
     width: 531px;
     height: 414px;
+
+    margin-right: 4px;
   }
 }
 
@@ -132,7 +137,7 @@
   //.calendar__days-list-item {}
 
   .calendar__wrap-months-grids-list {
-    width: 1000px;
+    width: 1001px;
   }
 
   .calendar__months-grids-list {
