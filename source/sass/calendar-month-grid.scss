@@ -1,0 +1,121 @@
+.calendar-month-grid {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  grid-gap: 1px;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(7, 30px);
+  grid-template-rows: repeat(6, 30px);
+}
+
+.calendar-month-grid__item {
+  display: flex;
+
+  position: relative;
+
+  box-shadow: 0 0 0 1px #d6d9e6;
+}
+
+.calendar-month-grid__item:hover {
+  box-shadow: 0 0 0 1px #ff5c23, inset 0 0 0 1px #ff5c23;
+  z-index: 10;
+}
+
+.calendar-month-grid__item--color-dark {
+  background-color: #1d2e5b;
+}
+
+.calendar-month-grid__item--color-dark .calendar-month-grid__number-day {
+  font-weight: 500;
+
+  color: #ffffff;
+  opacity: 1;
+}
+
+.calendar-month-grid__item--color-gray {
+  background-color: #edeff6;
+}
+
+.calendar-month-grid__item--color-gray .calendar-month-grid__number-day {
+  font-weight: 500;
+
+  color: #1d2e5b;
+  opacity: 1;
+}
+
+.calendar-month-grid__number-day {
+  margin: auto;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #444444;
+  opacity: 0.3;
+}
+
+.calendar-month-grid__first-month-day {
+  display: none;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .calendar-month-grid {
+    grid-template-columns: repeat(7, 75px);
+    grid-template-rows: repeat(6, 68px);
+  }
+
+  .calendar-month-grid__item:hover {
+    box-shadow: 0 0 0 2px #ff5c23, inset 0 0 0 2px #ff5c23;
+  }
+
+  .calendar-month-grid__number-day {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .calendar-month-grid {
+    grid-template-columns: repeat(7, 140px);
+    grid-template-rows: repeat(6, 70px);
+  }
+
+  .calendar-month-grid__item {
+    flex-direction: column;
+  }
+
+  .calendar-month-grid__number-day {
+    margin-top: 13px;
+    margin-left: 15px;
+    margin-bottom: 9px;
+  }
+
+  .calendar-month-grid__first-month-day {
+    display: inline-block;
+  }
+
+  .calendar-month-grid__item--first-day::after {
+    content: "Заезд";
+
+    display: block;
+    margin-left: 15px;
+
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #ffffff;
+  }
+
+  .calendar-month-grid__item--last-day::after {
+    content: "Выезд";
+
+    display: block;
+    margin-left: 15px;
+
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #ffffff;
+  }
+}
