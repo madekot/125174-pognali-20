@@ -57,6 +57,9 @@
 }
 
 .button-icon-new--styles-add-plan-travel {
+  min-width: 100%;
+  min-height: 40px;
+
   justify-content: center;
 
   border-radius: 20px;
@@ -96,6 +99,12 @@
   }
 
   .button-icon-new--styles-add-plan-travel {
+    min-width: 286px;
+    min-height: 80px;
+
+    padding-left: 34px;
+    padding-right: 37px;
+
     justify-content: space-between;
   }
 
