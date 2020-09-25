@@ -56,6 +56,25 @@
   }
 }
 
+.button-icon-new--styles-add-plan-travel {
+  justify-content: center;
+
+  border-radius: 20px;
+}
+
+.button-icon-new--styles-add-plan-travel .button-icon-new__text {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.button-icon-new--styles-add-plan-travel .button-icon-new__icon {
+  display: none;
+}
+
 .button-icon-new__text {
   font-weight: 800;
   font-size: 18px;
@@ -74,6 +93,23 @@
   .button-icon-new {
     padding-left: 33px;
     padding-right: 36px;
+  }
+
+  .button-icon-new--styles-add-plan-travel {
+    justify-content: space-between;
+  }
+
+  .button-icon-new--styles-add-plan-travel .button-icon-new__text {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  .button-icon-new--styles-add-plan-travel .button-icon-new__icon {
+    display: block;
   }
 
   .button-icon-new__text {
