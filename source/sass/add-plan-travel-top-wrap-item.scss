@@ -1,0 +1,118 @@
+.add-plan-travel-top-wrap-item {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+
+  color: #1d2e5b;
+}
+
+.add-plan-travel-top-wrap-itemstay__title {
+  margin-bottom: 16px;
+}
+
+.add-plan-travel-top-wrap-item__steps-indicator {
+  display: none;
+}
+
+.add-plan-travel-top-wrap-item__text-description {
+  margin-bottom: 19px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $special_grey;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .add-plan-travel-top-wrap-item {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .add-plan-travel-top-wrap-itemstay__title {
+    margin-bottom: 35px;
+  }
+
+  .add-plan-travel-top-wrap-item__text-description {
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .add-plan-travel-top-wrap-item {
+    display: grid;
+    grid-template-columns: minmax(min-content, auto) 2fr 1fr;
+  }
+
+  .add-plan-travel-top-wrap-item__step-number {
+    margin-right: 5px;
+  }
+
+  .add-plan-travel-top-wrap-item__steps-indicator {
+    justify-self: flex-end;
+
+    grid-column: 3;
+    grid-row: 1 / span 2;
+
+
+    display: block;
+
+    margin-right: 47px;
+  }
+
+  .add-plan-travel-top-wrap-item__steps-indicator-item {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+
+  .add-plan-travel-top-wrap-item__steps-indicator-item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .add-plan-travel-top-wrap-item__steps-indicator-item::before {
+    content: "";
+
+    width: 6px;
+    height: 6px;
+
+    margin-right: 36px;
+
+    border-radius: 50%;
+
+    background-color: #1d2e5b;
+    opacity: 0.3;
+  }
+
+  .add-plan-travel-top-wrap-item__steps-indicator-item-text {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+
+    color: #000000;
+    opacity: 0.6;
+  }
+
+  .add-plan-travel-top-wrap-item__steps-indicator-item--active::before {
+    opacity: 1;
+  }
+
+  .add-plan-travel-top-wrap-item__steps-indicator-item--active .add-plan-travel-top-wrap-item__steps-indicator-item-text {
+    opacity: 1;
+  }
+
+  .add-plan-travel-top-wrap-item__text-description {
+    grid-column: 1 / span 2;
+    margin-bottom: 55px;
+  }
+}

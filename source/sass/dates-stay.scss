@@ -1,3 +1,5 @@
+@import "add-plan-travel-top-wrap-item";
+
 .dates-stay {
   padding-top: 24px;
   padding-bottom: 23px;
@@ -9,24 +11,6 @@
 
 .dates-stay__top-wrap {
   margin-bottom: 20px;
-}
-
-.dates-stay__title {
-  margin-bottom: 16px;
-}
-
-.dates-stay__steps-indicator {
-  display: none;
-}
-
-.dates-stay__text-description {
-  margin-bottom: 19px;
-
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-
-  color: $special_grey;
 }
 
 .dates-stay__first-wrap {
@@ -45,17 +29,6 @@
   margin-bottom: 22px;
 }
 
-.dates-stay__next-step {}
-
-
-.add-plan-travel-top-wrap-item {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 20px;
-
-  color: #1d2e5b;
-}
-
 @media (min-width: $tablet-breakpoint) {
   .dates-stay {
     padding-top: 48px;
@@ -66,17 +39,6 @@
 
   .dates-stay__top-wrap {
     margin-bottom: 35px;
-  }
-
-  .dates-stay__title {
-    margin-bottom: 35px;
-  }
-
-  .dates-stay__text-description {
-    margin-bottom: 0;
-
-    font-size: 20px;
-    line-height: 24px;
   }
 
   .dates-stay__first-wrap {
@@ -116,12 +78,6 @@
   .dates-stay__next-step {
     grid-area: next-step;
   }
-
-
-  .add-plan-travel-top-wrap-item {
-    font-size: 36px;
-    line-height: 36px;
-  }
 }
 
 @media (min-width: $desktop-breakpoint) {
@@ -134,79 +90,6 @@
 
   .dates-stay__top-wrap {
     margin-bottom: 33px;
-  }
-
-  .dates-stay__step-number {
-    margin-right: 5px;
-  }
-
-  .dates-stay__text-description {
-    grid-column: 1 / span 2;
-  }
-
-  .dates-stay__steps-indicator {
-    justify-self: flex-end;
-
-    grid-column: 3;
-    grid-row: 1 / span 2;
-
-
-    display: block;
-
-    margin-right: 47px;
-  }
-
-  .dates-stay__steps-indicator-item {
-    display: flex;
-    align-items: center;
-  }
-
-  .dates-stay__steps-indicator-item {
-    margin-bottom: 20px;
-  }
-
-  .dates-stay__steps-indicator-item:last-of-type {
-    margin-bottom: 0;
-  }
-
-  .dates-stay__steps-indicator-item::before {
-    content: "";
-    
-    width: 6px;
-    height: 6px;
-
-    margin-right: 36px;
-
-    border-radius: 50%;
-
-    background-color: #1d2e5b;
-    opacity: 0.3;
-  }
-
-  .dates-stay__steps-indicator-item-text {
-    margin-top: 0;
-    margin-bottom: 0;
-
-    font-size: 20px;
-    line-height: 24px;
-
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
-
-    color: #000000;
-    opacity: 0.6;
-  }
-
-  .dates-stay__steps-indicator-item--active::before {
-    opacity: 1;
-  }
-
-  .dates-stay__steps-indicator-item--active .dates-stay__steps-indicator-item-text {
-    opacity: 1;
-  }
-
-  .dates-stay__text-description {
-    margin-bottom: 55px;
   }
 
   .dates-stay__first-wrap {
@@ -232,11 +115,5 @@
 
   .dates-stay__calendar {
     margin-bottom: 57px;
-  }
-
-
-  .add-plan-travel-top-wrap-item {
-    display: grid;
-    grid-template-columns: minmax(min-content, auto) 2fr 1fr;
   }
 }

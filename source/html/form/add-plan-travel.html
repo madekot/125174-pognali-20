@@ -19,7 +19,493 @@
     </div>
   </div>
   <ol class="add-plan-travel__steps-list">
-    <li class="add-plan-travel__steps-list-item"></li>
+    <li class="add-plan-travel__steps-list-item dates-stay">
+      <div class="dates-stay__top-wrap add-plan-travel-top-wrap-item">
+        <div class="add-plan-travel-top-wrap-item__step-number">Шаг 1.</div>
+        <div class="add-plan-travel-top-wrap-itemstay__title">Даты пребывания</div>
+        <div class="add-plan-travel-top-wrap-item__steps-indicator">
+          <div class="add-plan-travel-top-wrap-item__steps-indicator-item add-plan-travel-top-wrap-item__steps-indicator-item--active">
+            <p class="add-plan-travel-top-wrap-item__steps-indicator-item-text">Даты</p>
+          </div>
+          <div class="add-plan-travel-top-wrap-item__steps-indicator-item">
+            <p class="add-plan-travel-top-wrap-item__steps-indicator-item-text">Маршрут</p>
+          </div>
+          <div class="add-plan-travel-top-wrap-item__steps-indicator-item">
+            <p class="add-plan-travel-top-wrap-item__steps-indicator-item-text">Развлечения</p>
+          </div>
+        </div>
+        <div class="add-plan-travel-top-wrap-item__text-description">Укажите предпочтительное количество попутчиков, которых <br>вы хотели бы позвать в поездку и ее предполагаемую длительность.</div>
+      </div>
+      <div class="dates-stay__first-wrap">
+        <div class="dates-stay__number-travelers quantity-field">
+          <h3 class="quantity-field__title">ищу попутчиков:</h3>
+          <div class="quantity-field__units">чел.</div>
+          <div class="quantity-field__first-wrap">
+            <input class="quantity-field__input" type="text" value="2" id="fellow-travelers-input">
+            <button class="quantity-field__button"></button>
+            <button class="quantity-field__button quantity-field__button--order-before quantity-field__button--icon-increase"></button>
+            <label class="quantity-field__label" for="fellow-travelers-input"><span class="visually-hidden">Количество попутчиков</span></label>
+          </div>
+        </div>
+        <div class="dates-stay__amount-days quantity-field">
+          <h3 class="quantity-field__title">длительность:</h3>
+          <div class="quantity-field__units">дн.</div>
+          <div class="quantity-field__first-wrap">
+            <input class="quantity-field__input" type="text" value="2" id="fellow-duration-travel-input">
+            <button class="quantity-field__button"></button>
+            <button class="quantity-field__button quantity-field__button--order-before quantity-field__button--icon-increase"></button>
+            <label class="quantity-field__label" for="fellow-duration-travel-input"><span class="visually-hidden">Количество попутчиков</span></label>
+          </div>
+        </div>
+        <div class="dates-stay__have-children checkbox-field">
+          <input class="checkbox-field__input visually-hidden" type="checkbox" id="checkbox-field__input" checked>
+          <label class="checkbox-field__label" for="checkbox-field__input">
+            <span class="checkbox-field__title">Можно с детьми</span>
+          </label>
+        </div>
+      </div>
+      <div class="dates-stay__calendar calendar">
+        <div class="calendar__months-names calendar-months-names calendar-months-names">
+          <button class="calendar-months-names__month-switch-button calendar-months-names__month-switch-button--previous-js"></button>
+          <button class="calendar-months-names__month-switch-button calendar-months-names__month-switch-button--icon-next calendar-months-names__month-switch-button--next-js"></button>
+          <div class="calendar-months-names__wrap-months-list">
+            <ul class="calendar-months-names__months-list">
+              <li class="calendar-months-names__months-list-item">
+                <span class="calendar-months-names__name-month">Март</span>
+                <span class="calendar-months-names__year">2019</span>
+              </li>
+              <li class="calendar-months-names__months-list-item">
+                <span class="calendar-months-names__name-month">Апрель</span>
+                <span class="calendar-months-names__year">2019</span>
+              </li>
+              <li class="calendar-months-names__months-list-item">
+                <span class="calendar-months-names__name-month">Май</span>
+                <span class="calendar-months-names__year">2019</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="calendar__days-list">
+          <li class="calendar__days-list-item">П<span class="calendar__name-day">н</span></li>
+          <li class="calendar__days-list-item">В<span class="calendar__name-day">т</span></li>
+          <li class="calendar__days-list-item">С<span class="calendar__name-day">р</span></li>
+          <li class="calendar__days-list-item">Ч<span class="calendar__name-day">т</span></li>
+          <li class="calendar__days-list-item">П<span class="calendar__name-day">т</span></li>
+          <li class="calendar__days-list-item calendar__days-list-item--color">С<span class="calendar__name-day">б</span></li>
+          <li class="calendar__days-list-item calendar__days-list-item--color">В<span class="calendar__name-day">c</span></li>
+        </ul>
+        <div class="calendar__wrap-months-grids-list">
+          <ul class="calendar__months-grids-list">
+            <li class="calendar__months-grids-item">
+              <ol class="calendar-month-grid">
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">23</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">24</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">25</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">26</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">27</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">28</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">1
+                    <span class="calendar-month-grid__first-month-day">мар</span>
+                  </p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">2</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">3</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">4</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">5</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">6</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">7</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">8</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">9</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">10</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">11</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">12</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">13</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">14</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">15</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">16</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">17</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">18</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">19</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">20</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">21</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">22</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">23</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">24</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">25</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--first-day calendar-month-grid__item--color-dark">
+                  <p class="calendar-month-grid__number-day">26</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-dark">
+                  <p class="calendar-month-grid__number-day">27</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--last-day calendar-month-grid__item--color-dark">
+                  <p class="calendar-month-grid__number-day">28</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">29</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">30</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">31</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">1
+                    <span class="calendar-month-grid__first-month-day">Апр</span>
+                  </p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">2</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">3</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">4</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">5</p>
+                </li>
+              </ol>
+            </li>
+            <li class="calendar__months-grids-item">
+              <ol class="calendar-month-grid">
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">23</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">24</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">25</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">26</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">27</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">28</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">1
+                    <span class="calendar-month-grid__first-month-day">мар</span>
+                  </p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">2</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">3</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">4</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">5</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">6</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">7</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">8</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">9</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">10</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">11</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">12</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">13</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">14</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">15</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">16</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">17</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">18</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">19</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">20</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">21</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">22</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">23</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">24</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">25</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--first-day calendar-month-grid__item--color-dark">
+                  <p class="calendar-month-grid__number-day">26</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-dark">
+                  <p class="calendar-month-grid__number-day">27</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--last-day calendar-month-grid__item--color-dark">
+                  <p class="calendar-month-grid__number-day">28</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">29</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">30</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">31</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">1
+                    <span class="calendar-month-grid__first-month-day">Апр</span>
+                  </p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">2</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">3</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">4</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">5</p>
+                </li>
+              </ol>
+            </li>
+            <li class="calendar__months-grids-item">
+              <ol class="calendar-month-grid">
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">23</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">24</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">25</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">26</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">27</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">28</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">1
+                    <span class="calendar-month-grid__first-month-day">мар</span>
+                  </p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">2</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">3</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">4</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">5</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">6</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">7</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">8</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">9</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">10</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">11</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">12</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">13</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">14</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">15</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">16</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">17</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">18</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">19</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">20</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">21</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">22</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">23</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">24</p>
+                </li>
+                <li class="calendar-month-grid__item">
+                  <p class="calendar-month-grid__number-day">25</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--first-day calendar-month-grid__item--color-dark">
+                  <p class="calendar-month-grid__number-day">26</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-dark">
+                  <p class="calendar-month-grid__number-day">27</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--last-day calendar-month-grid__item--color-dark">
+                  <p class="calendar-month-grid__number-day">28</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">29</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">30</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">31</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">1
+                    <span class="calendar-month-grid__first-month-day">Апр</span>
+                  </p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">2</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">3</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">4</p>
+                </li>
+                <li class="calendar-month-grid__item calendar-month-grid__item--color-gray">
+                  <p class="calendar-month-grid__number-day">5</p>
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="dates-stay__next-step button-icon-new button-icon-new--styles-add-plan-travel" type="button">
+          <span class="button-icon-new__text">Следующий шаг</span>
+          <svg class="button-icon-new__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve"><polygon points="0,14 0,0.1 10,7.1 "/></svg>
+        </button>
+    </li>
     <li class="add-plan-travel__steps-list-item"></li>
     <li class="add-plan-travel__steps-list-item"></li>
   </ol>
